@@ -16,6 +16,15 @@
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
     <style>
+      body {
+        background-image: url('images/Martinus-Nijhoffbrug.jpg');
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+      }
+    
       header {
         background-color: #690;
         color: #fff;
@@ -25,11 +34,24 @@
       header h1 {
         font-weight: 200;
         margin: 0;
-        padding: 1.5em;
+        padding: 1em;
       }
 
       header h1 span {
         font-weight: 900;
+      }
+      
+      footer {
+        bottom: 0;
+        color: rgba(255,255,255,.7);
+        left: 0;
+        position: fixed;
+        right: 0;
+        text-align: center;
+      }
+      
+      footer a {
+        color: inherit;
       }
     </style>
 
@@ -41,6 +63,10 @@
     <main>
     </main>
     <footer>
+      <p>
+        Copyright © 2016 StoreCore. All rights reserved <br>
+        Photos courtesy of <a href="https://beeldbank.rws.nl/">Rijkswaterstaat / RWS</a>, Ministerie van Infrastructuur en Milieu.
+      </p>
     </footer>
   </body>
 </html>
