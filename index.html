@@ -12,7 +12,7 @@
 
     <title>StoreCore™</title>
     <meta name="description" content="Introducing StoreCore, a new European e-commerce platform.">
-    
+
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="StoreCore™">
@@ -38,11 +38,22 @@
 
     <style>
       body {
-        background: url('/images/Martinus-Nijhoffbrug.jpg') no-repeat center center fixed;
         -webkit-background-size: cover;
            -moz-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
+      }
+
+      @media screen and (max-width: 1600px), screen and (max-height: 1200px) {
+        body {
+          background: url('/images/Martinus-Nijhoffbrug-UXGA-1600x1200.jpg') no-repeat center center fixed;
+        }
+      }
+
+      @media screen and (min-width: 1601px), screen and (min-height: 1201px) {
+        body {
+          background: url('/images/Martinus-Nijhoffbrug-UHD-3840x2160.jpg') no-repeat center center fixed;
+        }
       }
 
       header {
