@@ -63,6 +63,35 @@ li {
   margin-bottom: 1em;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+thead {
+  border-top:1px solid #e0e0e0;
+}
+
+tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+td,
+th {
+  font-size: 16px;
+  text-align: left;
+}
+
+td {
+  font-family: "Noto Serif", serif;
+  padding: 2px 1ex 3px 2px;
+}
+
+th {
+  color: #424242;
+  font-family: "Noto Sans", sans-serif;
+  padding: 5px 1ex 4px 2px;
+}
+
 code,
 kbd,
 tt,
@@ -124,7 +153,9 @@ nav a:hover {
   }
 
   li,
-  p {
+  p,
+  td,
+  th {
     font-size: 14px;
   }
 
