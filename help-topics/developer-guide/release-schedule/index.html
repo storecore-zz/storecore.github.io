@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
-  <title>Installation QuickStart Guide - StoreCore Help</title>
-  <link rel="canonical" href="http://storecore.io/help-topics/installation/quick-start-guide/">
+  <title>StoreCore Release Schedule</title>
+  <link rel="canonical" href="http://storecore.io/help-topics/developer-guide/release-schedule/">
 
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <meta name="robots" content="index,follow">
@@ -15,12 +15,12 @@
     {
       "@context": "http://schema.org",
       "@type": "TechArticle",
-      "mainEntityOfPage": "http://storecore.io/help-topics/installation/quick-start-guide/",
-      "headline": "Installation QuickStart Guide",
-      "datePublished": "2016-06-01T12:00:00Z",
-      "dateModified": "2017-01-10T10:02:00Z",
+      "mainEntityOfPage": "http://storecore.io/help-topics/developer-guide/release-schedule/",
+      "headline": "StoreCore Release Schedule",
+      "datePublished": "2017-01-11T02:02:00Z",
+      "dateModified": "2017-01-11T02:02:00Z",
       "proficiencyLevel": "Beginner",
-      "description": "Step-by-step installation instructions for the StoreCore e-commerce framework.",
+      "description": "Release schedule for the StoreCore e-commerce framework",
       "author": {
         "@type": "Person",
         "name": "Ward van der Put"
@@ -48,76 +48,69 @@
 <body>
   <nav>
     <ul>
-      <li><a href="http://storecore.io/help-topics/">StoreCore Help</a></li>
-      <li><a href="http://storecore.io/help-topics/installation/">Installation</a></li>
-      <li>QuickStart Guide</li>
+      <li><a href="http://storecore.io/">StoreCore</a></li>
+      <li>Release schedule</li>
     </ul>
   </nav>
   <article>
     <h1>
-      <amp-fit-text layout="responsive" height="150" max-font-size="56" min-font-size="16" width="850">Installation QuickStart Guide</amp-fit-text>
+      <amp-fit-text layout="responsive" height="150" max-font-size="56" min-font-size="16" width="850">StoreCore Release Schedule</amp-fit-text>
     </h1>
     <section>
-      <h4>Installing StoreCore step-by-step</h4>
-      <ol>
-        <li>
-          Download the latest edition of the StoreCore files from the
-          <a href="https://github.com/storecore">GitHub repository</a> at
-          <strong>github.com/storecore</strong> if you haven’t already.  Always
-          download or fork the <strong>master</strong> branch for production
-          purposes.
-        </li>
-        <li>
-          Create a new MySQL database for StoreCore on your web server.  Do not
-          use the default MySQL <strong>test</strong> database or a database
-          name with the <strong>test_</strong> prefix.
-        </li>
-        <li>
-          Add a MySQL user who has all privileges for accessing and modifying
-          the StoreCore database.
-        </li>
-        <li>
-          Find the <strong>config.php</strong> configuration file, then edit
-          the file and add your database information in the
-          <strong>Database</strong> section.
-        </li>
-        <li>
-          <em>Optional.</em>  If configured correctly, StoreCore is able to
-          install the database by itself.  However, the installation
-          <em>may</em> run faster and smoother if you install the database
-          manually with a database administration tool like MySQL Workbench,
-          phpMyAdmin, or a MySQL command line interface.  First run the SQL
-          file <strong>core-mysql.sql</strong> to create all tables; next run
-          the <strong>i18n-dml.sql</strong> file to add all language pack data.
-          Both SQL files are located in the <strong>/StoreCore/Database/</strong>
-          folder.
-        </li>
-        <li>
-          Upload the StoreCore files to the desired location on your web
-          server.  This usually is a folder called <strong>public_html</strong>
-          for a domain or <strong>www</strong> for a subdomain like
-          www.example.com.  Do not upload the <strong>/tests/</strong> folder
-          to a production server (or delete it afterwards): this folder
-          contains PHP unit tests for development purposes.
-        </li>
-        <li>
-          Run the StoreCore installation by accessing the URL in a web browser.
-          If StoreCore was not previously installed, you will be guided through
-          the necessary steps to complete the installation.
-        </li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Installation Logs</h2>
+      <h2>Release cycle</h2>
       <p>
-        All installation and configuration activities are logged to
-        <strong>.log</strong> text files in the main <strong>/logs/</strong>
-        directory.  If the StoreCore installation fails for any reason, please
-        first check these log files for possible errors, warnings or other
-        critical messages.
+        To allow for continuous development and predictable deployment, updates
+        of the <a href="http://storecore.io/">StoreCore e-commerce framework</a>
+        are released on the last Tuesday of each month.  The current release 
+        schedule for all major and minor releases of StoreCore version&nbsp;1
+        is outlined in the table below.
+      </p>
+      <p>
+        In many retail operations, online orders that come in during the
+        weekend, are processed and shipped on Monday. Therefore updates of
+        software critical to key operations should be postponed to a Tuesday.
+        Updating on Tuesday furthermore allows for the discovery of new 
+        features, and possibly bugs, over a three-day period during the 
+        remainder of the working week.
       </p>
     </section>
+    <section>
+      <h2>Scheduled releases</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th><th>Version 1</th><th>Version 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tuesday 31 January 2017</td><td>1.0.0-beta.1</td><td></td></tr>
+          <tr><td>Tuesday 28 February 2017</td><td>1.0.0-beta.2</td><td></td></tr>
+          <tr><td>Tuesday 28 March 2017</td><td>1.0.0-rc.1</td><td></td></tr>
+          <tr><td>Tuesday 25 April 2017</td><td>1.0.0</td><td></td></tr>
+          <tr><td>Tuesday 30 May 2017</td><td>1.1.0</td><td></td></tr>
+          <tr><td>Tuesday 27 June 2017</td><td>1.2.0</td><td></td></tr>
+          <tr><td>Tuesday 26 July 2017</td><td>1.3.0</td><td></td></tr>
+          <tr><td>Tuesday 29 August 2017</td><td>1.4.0</td><td></td></tr>
+          <tr><td>Tuesday 26 September 2017</td><td>1.5.0</td><td></td></tr>
+          <tr><td>Tuesday 31 October 2017</td><td>1.6.0</td><td></td></tr>
+          <tr><td>Tuesday 28 November 2017</td><td>1.7.0</td><td></td></tr>
+          <tr><td>Tuesday 26 December 2017</td><td>1.8.0</td><td></td></tr>
+          <tr><td>Tuesday 30 January 2018</td><td>1.9.0</td><td>2.0.0-alpha.1</td></tr>
+          <tr><td>Tuesday 27 February 2018</td><td>1.10.0</td><td>2.0.0-beta.1</td></tr>
+          <tr><td>Tuesday 27 March 2018</td><td>1.11.0</td><td>2.0.0-rc.1</td></tr>
+          <tr><td>Tuesday 24 April 2018</td><td>†</td><td>2.0.0</td></tr>
+          <tr><td>Tuesday 29 May 2018</td><td></td><td>2.1.0</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <aside>
+      <p>
+        The information in this document is provided “as is” without any
+        express or implied warranty of any kind, including, without limitation,
+        warranties of merchantability, title, non infringement of intellectual
+        property rights, or fitness for any particular purpose.
+      </p>
+    </aside>
   </article>
 
   <amp-analytics type="googleanalytics" id="analyticsPageview">
