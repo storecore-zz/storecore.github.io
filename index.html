@@ -101,13 +101,15 @@
         display: inline-block;
         text-align: center;
         font-size: 30px;
+        white-space: nowrap;
+        overflow: hidden;
       }
 
       #clockdiv > div {
-        padding: 10px;
         border-radius: 3px;
         background: rgba(0,0,0,.54);
         display: inline-block;
+        padding: 10px;
       }
 
       #clockdiv div > span {
@@ -131,6 +133,21 @@
       #clockdiv .days {
         background: rgb(153,51,204);
         font-weight: 700;
+      }
+
+      @media only screen and (max-width: 400px) {
+
+        #clockdiv > div {
+          padding: 6px;
+        }
+
+        #clockdiv div > span {
+          padding: 12px;
+        }
+
+        #clockdiv .smalltext {
+          font-size: 11px;
+        }
       }
     </style>
 
