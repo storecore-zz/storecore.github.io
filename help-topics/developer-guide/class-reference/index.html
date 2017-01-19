@@ -1,0 +1,283 @@
+<!doctype html>
+<html amp lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  <title>StoreCore Class Reference - StoreCore Developer Guide</title>
+  <link rel="canonical" href="http://storecore.io/help-topics/developer-guide/class-reference/">
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Droid+Sans:400|Noto+Serif:400,400i,700" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "TechArticle",
+      "mainEntityOfPage": "http://storecore.io/help-topics/developer-guide/class-reference/",
+      "headline": "StoreCore Class Reference",
+      "datePublished": "2016-11-09T12:34:47Z",
+      "dateModified": "2017-01-19T06:13:00Z",
+      "proficiencyLevel": "Expert",
+      "description": "Appendix to the StoreCore Developer Guide outlining all functional packages, PHP namespaces, PHP interfaces, PHP classes and their methods.",
+      "author": {
+        "@type": "Person",
+        "name": "Ward van der Put"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "StoreCore",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://storecore.io/images/StoreCore-icon-144x144.png",
+          "width": 144,
+          "height": 144
+        }
+      }
+    }
+  </script>
+
+  <style amp-custom>
+    body{background:#690;border-collapse:collapse;color:#fff;cursor:default}article{background:#fff;box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,.2);color:#000;display:block;margin:auto;margin-bottom:40px;max-width:850px;padding:1em 1.5em}h1,h2,h3{color:#212121;font-family:"Droid Sans",sans-serif;font-weight:400;padding-top:1ex}h1{font-size:28px}h2{font-size:23px}h3{font-size:19px}h4{font-family:"Noto Serif",serif;font-size:16px;font-weight:700;line-height:1.5em}h4::after{content:":"}h4::before{content:"► "}li,p{font-family:"Noto Serif",serif;font-size:16px;line-height:1.5em}li{margin-bottom:1em}table{border-collapse:collapse}thead{border-top:1px solid #e0e0e0}tr{border-bottom:1px solid #e0e0e0}td,th{font-size:16px;text-align:left}td{font-family:"Noto Serif",serif;padding:2px 1ex 3px 2px}th{color:#212121;font-family:"Droid Sans",sans-serif;font-weight:400;padding:4px 1ex 4px 2px}code,kbd,tt,samp{font-family:"Droid Sans Mono",monospace}a{color:#09c;text-decoration:none}a:hover{text-decoration:underline}strong{font-weight:700;white-space:nowrap}nav ul{list-style:none;margin:0;overflow:hidden;padding:0 0 0 1em}nav li{display:inline-block;float:left;font-family:"Droid Sans",sans-serif;font-size:20px;font-weight:400;line-height:64px;margin:0;min-height:40px;padding:1ex 0 1ex 0}nav a{color:#fff;text-decoration:none}nav a::after{content:"›";padding:0 1ex}nav a:hover{text-decoration:none}@media only screen and (max-width:500px){nav ul li:last-child{display:none}li,p,td,th{font-size:14px}}@media print{nav{display:none}article{box-shadow:none}article,body,h1,h2,h3,h4,li,ul,p,pre,a{background:transparent;color:#000}a{text-decoration:none}}
+
+    dl {
+      color: #000;
+      font-family: Inconsolata, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    dt {
+      color: #93c;
+    }
+
+    dd {
+      margin-left: 2em;
+    }
+
+    dt::after {
+      color: #369;
+      content: " {";
+    }
+
+    dl::after {
+      color: #369;
+      content: "}"
+    }
+
+    dd strong,
+    dt strong {
+      color: #369;
+      font-weight: bold;
+    }
+
+    dt a, dt a:link, dt a:visited {
+      color: rgb(51,102,153);
+      border-bottom: 1px solid rgba(51,102,153,.54);
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+    dd a, dd a:link, dd a:visited {
+      border-bottom: 1px solid rgba(0,153,204,.54);
+      color: rgb(0,153,204);
+      text-decoration: none;
+    }
+
+    dd var {
+      color: #09c;
+      font-style: normal;
+    }
+
+    p code {
+      font-family: Inconsolata, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;;
+      font-size: inherit;
+      font-weight: 700;
+      padding: 0 1px 0 1px;
+    }
+  </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="http://storecore.io/">StoreCore</a></li>
+      <li>Class Reference</li>
+    </ul>
+  </nav>
+  <article>
+    <h1>StoreCore Class Reference</h1>
+    <p>
+      This appendix to the StoreCore Developer Guide outlines all interfaces,
+      abstract classes, and classes of the StoreCore framework
+      <abbr title="application programming interface">API</abbr> (application
+      programming interface).
+    </p>
+    <section>
+      <h2>Package StoreCore\Core</h2>
+      <h3>Namespace StoreCore</h3>
+      <dl id="StoreCore-ObserverInterface">
+        <dt>interface <strong>\StoreCore\ObserverInterface</strong></dt>
+        <dd>public <strong>update</strong> ( <a href="#StoreCore-SubjectInterface">\StoreCore\SubjectInterface</a> <var>$subject</var> )</dd>
+      </dl>
+      <dl id="StoreCore-SingletonInterface">
+        <dt>interface <strong>\StoreCore\SingletonInterface</strong></dt>
+        <dd>public static self <strong>getInstance</strong> ( void )</dd>
+      </dl>
+      <dl id="StoreCore-SubjectInterface">
+        <dt>interface <strong>\StoreCore\SubjectInterface</strong></dt>
+        <dd>
+          public void <strong>attach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>detach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>notify</strong> ( void )
+        </dd>
+      </dl>
+      <dl id="StoreCore-AbstractModel">
+        <dt>abstract class <strong>\StoreCore\AbstractModel</strong></dt>
+        <dd>
+          public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )<br>
+          public mixed <strong>__get</strong> ( string <var>$key</var> )<br>
+          public void <strong>__set</strong> ( string <var>$key</var> , mixed <var>$value</var> )
+        </dd>
+      </dl>
+      <dl id="StoreCore-Document">
+        <dt>class <strong>\StoreCore\Document</strong></dt>
+        <dd>
+          public <strong>__construct</strong> ( [ string <var>$title</var> ] )<br>
+          public string <strong>__toString</strong> ( void )<br>
+          public $this <strong>addLink</strong> ( string <var>$href</var> [, string <var>$rel</var> [, string <var>$type</var> [, string <var>$media</var> [, string $hreflang ]]]] )<br>
+          public $this <strong>addMetaData</strong> ( string <var>$name</var> , string <var>$content</var> )<br>
+          public $this <strong>addMetaProperty</strong> ( string <var>$property</var> , string <var>$content</var> )<br>
+          public $this <strong>addScript</strong> ( string <var>$script</var> [, bool <var>$defer</var> = true ] )<br>
+          public $this <strong>addSection</strong> ( string <var>$content</var> [, string|false|null <var>$container</var> = 'section' ] )<br>
+          public $this <strong>addStyle</strong> ( string <var>$css</var> )<br>
+          public void <strong>amplify</strong> ( [ bool <var>$use_amp_html</var> = true ] )<br>
+          public string <strong>getBody</strong> ( void )<br>
+          public string <strong>getDocument</strong> ( void )<br>
+          public string <strong>getHead</strong> ( void )<br>
+          public $this <strong>setDescription</strong> ( string <var>$description</var> )<br>
+          public $this <strong>setLanguage</strong> ( string <var>$language_code</var> )<br>
+          public $this <strong>setThemeColor</strong> ( string <var>$color</var> )<br>
+          public $this <strong>setTitle</strong> ( string <var>$title</var> )
+        </dd>
+      </dl>
+      <dl id="StoreCore-Registry">
+        <dt>final class <strong>\StoreCore\Registry</strong> implements <a href="#StoreCore-SingletonInterface">\StoreCore\SingletonInterface</a></dt>
+        <dd>
+          public static self <strong>getInstance</strong> ( void )<br>
+          public mixed|null <strong>get</strong> ( string <var>$key</var> )<br>
+          public bool <strong>has</strong> ( string <var>$key</var> )<br>
+          public void <strong>set</strong> ( string <var>$key</var> , mixed <var>$value</var> )
+        </dd>
+      </dl>
+      <dl id="StoreCore-Request">
+        <dt>class <strong>\StoreCore\Request</strong></dt>
+        <dd>
+          public self <strong>__construct</strong> ( void )<br>
+          public mixed|null <strong>get</strong> ( string <var>$key</var> )<br>
+          public string <strong>getAcceptEncoding</strong> ( void )<br>
+          public mixed|null <strong>getCookie</strong> ( string <var>$cookie_name</var> )<br>
+          public string <strong>getHostName</strong> ( void )<br>
+          public string <strong>getMethod</strong> ( void )<br>
+          public string <strong>getRemoteAddress</strong> ( void )<br>
+          public string <strong>getRequestPath</strong> ( void )<br>
+          public array <strong>getServerParams</strong> ( void )<br>
+          public string|null <strong>getUserAgent</strong> ( void )<br>
+          public bool <strong>hasCookie</strong> ( string <var>$cookie_name</var> )<br>
+          public bool <strong>isSecure</strong> ( void )
+        </dd>
+      </dl>
+      <dl id="StoreCore-Route">
+        <dt>class <strong>\StoreCore\Route</strong></dt>
+        <dd>
+          public <strong>__construct</strong> ( string <var>$path</var> , string <var>$controller</var> [, string <var>$method</var> [, mixed <var>$parameters</var> ]] )<br>
+          public void <strong>dispatch</strong> ( void )<br>
+          public string <strong>getPath</strong> ( void )
+        </dd>
+      </dl>
+      <dl id="StoreCore-RouteCollection">
+        <dt>class <strong>\StoreCore\RouteCollection</strong></dt>
+        <dd>
+          public void <strong>add</strong> ( <a href="#StoreCore-Route">\StoreCore\Route</a> <var>$route</var> )<br>
+          public void <strong>dispatch</strong> ( void )<br>
+          public bool <strong>isEmpty</strong> ( void )<br>
+          public bool <strong>pathExists</strong> ( string <var>$path</var> )
+        </dd>
+      </dl>
+      <h3>Namespace StoreCore\Database</h3>
+      <dl id="StoreCore-Database-AbstractModel">
+        <dt>abstract class <strong>\StoreCore\Database\AbstractModel</strong> extends <a href="#StoreCore-AbstractModel">\StoreCore\AbstractModel</a></dt>
+        <dd>public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )</dd>
+      </dl>
+      <dl>
+        <dt>class <strong>\StoreCore\Database\RouteFactory</strong> extends <a href="#StoreCore-Database-AbstractModel">\StoreCore\Database\AbstractModel</a></dt>
+        <dd>
+          public <a href="#StoreCore-Route">\StoreCore\Route</a>|<a href="#StoreCore-RouteCollection">\StoreCore\RouteCollection</a>|null <strong>find</strong> ( [ string <var>$path</var> ] )<br>
+          public <a href="#StoreCore-RouteCollection">\StoreCore\RouteCollection</a>|null <strong>findRouteCollection</strong> ( string <var>$path</var> )
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Package StoreCore\CMS</h2>
+      <p>
+        The StoreCore <code>@package StoreCore\CMS</code> contains classes for
+        the Content Management System (<abbr title="Content Management System">CMS</abbr>).
+      </p>
+      <h3>Namespace StoreCore</h3>
+      <dl>
+        <dt>class <strong>\StoreCore\Redirector</strong></dt>
+        <dd>public static void <strong>find</strong> ( <a href="#StoreCore-Request">\StoreCore\Request</a> <var>$request</var> )</dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Package StoreCore\Security</h2>
+      <h3>Namespace StoreCore\FileSystem</h3>
+      <dl id="StoreCore-FileSystem-Logger">
+        <dt>class <strong>\StoreCore\FileSystem\Logger</strong> extends <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md#3-psrlogloggerinterface">\Psr\Log\AbstractLogger</a> implements <a href="#StoreCore-SubjectInterface">\StoreCore\SubjectInterface</a></dt>
+        <dd>
+          public self <strong>__construct</strong> ( [ string <var>$filename</var> ] )<br>
+          public void <strong>__destruct</strong> ( void )<br>
+          public void <strong>attach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>detach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>flush</strong> ( void )<br>
+          public string <strong>getFilename</strong> ( void )<br>
+          public string|null <strong>getMessage</strong> ( void )<br>
+          public void <strong>log</strong> ( <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md#3-psrlogloggerinterface">\Psr\Log\LogLevel</a> <var>$level</var> , string <var>$message</var> [, array <var>$context</var> = array() ] )<br>
+          public void <strong>notify</strong> ( void )
+        </dd>
+      </dl>
+      <h3>Namespace \StoreCore\Types\ActivationKey</h3>
+      <dl id="StoreCore-Types-ActivationKey">
+        <dt>class \StoreCore\Types\ActivationKey</dt>
+        <dd>
+          public self <strong>__construct</strong> ( [ int <var>$chunck_length</var> = 4 [, int <var>$chuncks</var> = 3 ]] )<br>
+          public string <strong>__toString</strong> ( void )<br>
+          public string <strong>get</strong> ( [ string <var>$delimiter</var> = '-' ] )<br>
+          public string <strong>randomize</strong> ( void )<br>
+          public void <strong>setChunkLength</strong> ( int <var>$number_of_characters</var> )<br>
+          public void <strong>setChunks</strong> ( int <var>$chuncks</var> )
+        </dd>
+      </dl>
+    </section>
+  </article>
+
+  <amp-analytics type="googleanalytics" id="analyticsPageview">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-80202349-1"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
+
+</body>
+</html>
