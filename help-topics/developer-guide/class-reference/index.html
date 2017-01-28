@@ -113,8 +113,12 @@
       This appendix to the StoreCore Developer Guide outlines all interfaces,
       abstract classes, and classes of the StoreCore framework
       <abbr title="application programming interface">API</abbr> (application
-      programming interface).
+      programming interface).  The online version of the Class Reference
+      allows you to navigate through the public
+      <abbr title="application programming interface">API</abbr>: it contains
+      links pointing back to extended classes and implemented interfaces.
     </p>
+
     <section>
       <h2>Package StoreCore\Core</h2>
       <h3>Namespace StoreCore</h3>
@@ -134,12 +138,28 @@
           public void <strong>notify</strong> ( void )
         </dd>
       </dl>
+      <dl id="StoreCore-AbstractController">
+        <dt>abstract class <strong>\StoreCore\AbstractController</strong></dt>
+        <dd>
+          public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )<br>
+          public mixed <strong>__get</strong> ( string <var>$key</var> )<br>
+          public void <strong>__set</strong> ( string <var>$key</var> , mixed <var>$value</var> )
+        </dd>
+      </dl>
       <dl id="StoreCore-AbstractModel">
         <dt>abstract class <strong>\StoreCore\AbstractModel</strong></dt>
         <dd>
           public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )<br>
           public mixed <strong>__get</strong> ( string <var>$key</var> )<br>
           public void <strong>__set</strong> ( string <var>$key</var> , mixed <var>$value</var> )
+        </dd>
+      </dl>
+      <dl id="StoreCore-AbstractSubject">
+        <dt>abstract class <strong>\StoreCore\AbstractSubject</strong> implements <a href="#StoreCore-SubjectInterface">\StoreCore\SubjectInterface</a></dt>
+        <dd>
+          public void <strong>attach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>detach</strong> ( <a href="#StoreCore-ObserverInterface">\StoreCore\ObserverInterface</a> <var>$observer</var> )<br>
+          public void <strong>notify</strong> ( void )
         </dd>
       </dl>
       <dl id="StoreCore-Document">
@@ -189,6 +209,17 @@
           public bool <strong>isSecure</strong> ( void )
         </dd>
       </dl>
+      <dl id="StoreCore-Response">
+        <dt>class <strong>\StoreCore\Response</strong> extends <a href="#StoreCore-AbstractController">\StoreCore\AbstractController</a></dt>
+        <dd>
+          public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )<br>
+          public void <strong>addHeader</strong> ( string <var>$header</var> )<br>
+          public void <strong>output</strong> ( void )<br>
+          public void <strong>redirect</strong> ( string <var>$url</var> [, int <var>$status</var> = 302 ] )<br>
+          public void <strong>setCompression</strong> ( [ int|bool <var>$level</var> = -1 ] )<br>
+          public voii <strong>setResponseBody</strong> ( string <var>$output</var> )
+        </dd>
+      </dl>
       <dl id="StoreCore-Route">
         <dt>class <strong>\StoreCore\Route</strong></dt>
         <dd>
@@ -211,7 +242,7 @@
         <dt>abstract class <strong>\StoreCore\Database\AbstractModel</strong> extends <a href="#StoreCore-AbstractModel">\StoreCore\AbstractModel</a></dt>
         <dd>public <strong>__construct</strong> ( <a href="#StoreCore-Registry">\StoreCore\Registry</a> <var>$registry</var> )</dd>
       </dl>
-      <dl>
+      <dl id="StoreCore-Database-RouteFactory">
         <dt>class <strong>\StoreCore\Database\RouteFactory</strong> extends <a href="#StoreCore-Database-AbstractModel">\StoreCore\Database\AbstractModel</a></dt>
         <dd>
           public <a href="#StoreCore-Route">\StoreCore\Route</a>|<a href="#StoreCore-RouteCollection">\StoreCore\RouteCollection</a>|null <strong>find</strong> ( [ string <var>$path</var> ] )<br>
@@ -219,7 +250,8 @@
         </dd>
       </dl>
     </section>
-    <section>
+
+    <section id="package-StoreCore-CMS">
       <h2>Package StoreCore\CMS</h2>
       <p>
         The StoreCore <code>@package StoreCore\CMS</code> contains classes for
@@ -231,8 +263,107 @@
         <dd>public static void <strong>find</strong> ( <a href="#StoreCore-Request">\StoreCore\Request</a> <var>$request</var> )</dd>
       </dl>
     </section>
-    <section>
+
+    <section id="package-StoreCore-CRM">
+      <h2>Package StoreCore\CRM</h2>
+      <h3>Namespace StoreCore</h3>
+      <dl id="StoreCore-Person">
+        <dt>class <strong>\StoreCore\Person</strong> extends <a href="#StoreCore-AbstractSubject">\StoreCore\AbstractSubject</a></dt>
+        <dd>
+          public void <strong>anonymize</strong> ( void )<br>
+          public string|null <strong>getAdditionalName</strong> ( void )<br>
+          public bool <strong>getAnonymizedFlag</strong> ( void )<br>
+          public string|null <strong>getBirthDate</strong> ( void )<br>
+          public string|null <strong>getDateCreated</strong> ( void )<br>
+          public string|null <strong>getDeathDate</strong> ( void )<br>
+          public string|null <strong>getDeathPlace</strong> ( void )<br>
+          public bool <strong>getDeletedFlag</strong> ( void )<br>
+          public string|null <strong>getEmailAddress</strong> ( void )<br>
+          public string|null <strong>getFamilyName</strong> ( void )<br>
+          public string|null <strong>getFullName</strong> ( void )<br>
+          public string|null <strong>getFullNameInitials</strong> ( void )<br>
+          public int <strong>getGender</strong> ( void )<br>
+          public string|null <strong>getGivenName</strong> ( void )<br>
+          public string|null <strong>getGivenNameInitials</strong> ( void )<br>
+          public string|null <strong>getHonorificPrefix</strong> ( void )<br>
+          public string|null <strong>getHonorificSuffix</strong> ( void )<br>
+          public string|null <strong>getMiddleNameInitials</strong> ( void )<br>
+          public string|null <strong>getNationality</strong> ( void )<br>
+          public int|null <strong>getPersonID</strong> ( void )<br>
+          public string|null <strong>getTelephoneNumber</strong> ( void )<br>
+          public bool <strong>isFemale</strong> ( void )<br>
+          public bool <strong>isMale</strong> ( void )<br>
+          public void <strong>setAdditionalName</strong> ( string <var>$additional_name</var> )<br>
+          public void <strong>setAnonymizedFlag</strong> ( mixed <var>$anonymized_flag</var> )<br>
+          public void <strong>setBirthDate</strong> ( string|int <var>$birth_date</var> )<br>
+          public void <strong>setBirthPlace</strong> ( string <var>$birth_place</var> )<br>
+          public void <strong>setDateCreated</strong> ( string <var>$date_created</var> )<br>
+          public void <strong>setDateModified</strong> ( string <var>$date_modified</var> )<br>
+          public void <strong>setDeathDate</strong> ( string|int <var>$death_date</var> )<br>
+          public void <strong>setDeathPlace</strong> ( string <var>$death_place</var> )<br>
+          public void <strong>setDeletedFlag</strong> ( mixed <var>$deleted_flag</var> )<br>
+          public void <strong>setEmailAddress</strong> ( string <var>$email_address</var> )<br>
+          public void <strong>setFamilyName</strong> ( string <var>$family_name</var> )<br>
+          public void <strong>setFullName</strong> ( string <var>$full_name</var> )<br>
+          public void <strong>setFullNameInitials</strong> ( string <var>$full_name_initials</var> )<br>
+          public void <strong>setGender</strong> ( int|string <var>$gender</var> )<br>
+          public void <strong>setGivenName</strong> ( string <var>$given_name</var> )<br>
+          public void <strong>setGivenNameInitials</strong> ( string <var>$given_name_initials</var> )<br>
+          public void <strong>setHonorificPrefix</strong> ( string <var>$honorific_prefix</var> )<br>
+          public void <strong>setHonorificSuffix</strong> ( string <var>$honorific_suffix</var> )<br>
+          public void <strong>setMiddleNameInitials</strong> ( string <var>$middle_name_initials</var> )<br>
+          public void <strong>setNationality</strong> ( string <var>$nationality</var> )<br>
+          public void <strong>setPersonID</strong> ( int <var>$person_id</var> )<br>
+          public void <strong>setTelephoneNumber</strong> ( string $telephone_number</var> )
+        </dd>
+      </dl>
+    </section>
+
+    <section id="package-StoreCore-Security">
       <h2>Package StoreCore\Security</h2>
+      <h3>Namespace StoreCore</h3>
+      <dl id="StoreCore-User">
+        <dt>class <strong>User</strong></dt>
+        <dd>
+          public bool <strong>authenticate</strong> ( string <var>$password</var> )<br>
+          public string <strong>getDateTimeZone</strong> ( void )<br>
+          public string <strong>getEmailAddress</strong> ( void )<br>
+          public string|null <strong>getHashAlgorithm</strong> ( void )<br>
+          public string <strong>getLanguage</strong> ( void )<br>
+          public string|null <strong>getPasswordHash</strong> ( void )<br>
+          public string|null <strong>getPasswordSalt</strong> ( void )<br>
+          public int|null <strong>getPersonID</strong> ( void )<br>
+          public string|null <strong>getPIN</strong> ( void )<br>
+          public int <strong>getUserGroupID</strong> ( void )<br>
+          public int|null <strong>getUserID</strong> ( void )<br>
+          public string|null <strong>getUsername</strong> ( void )<br>
+          public void <strong>setDateTimeZone</strong> ( <a href="https://secure.php.net/DateTimeZone">\DateTimeZone</a>|string <var>$timezone</var> )<br>
+          public void <strong>setEmailAddress</strong> ( string <var>$email_address</var> )<br>
+          public void <strong>setHashAlgorithm</strong> ( string <var>$hash_algorithm</var> )<br>
+          public void <strong>setLanguage</strong> ( string <var>$language_code</var> )<br>
+          public void <strong>setPasswordHash</strong> ( string <var>$password_hash</var> )<br>
+          public void <strong>setPasswordSalt</strong> ( string <var>$password_salt</var> )<br>
+          public void <strong>setPersonID</strong> ( int <var>$person_id</var> )<br>
+          public void <strong>setPIN</strong> ( string <var>$pin_code</var> )<br>
+          public void <strong>setUserGroupID</strong> ( int <var>$user_group_id</var> )<br>
+          public void <strong>setUserID</strong> ( int <var>$user_id</var> )<br>
+          public void <strong>setUsername</strong> ( string <var>$username</var> )
+        </dd>
+      </dl>
+      <h3>Namespace StoreCore\Database</h3>
+      <dl id="StoreCore-Database-UserMapper">
+        <dt>class <strong>\StoreCore\Database\UserMapper</strong> extends \StoreCore\Database\AbstractDataAccessObject</dt>
+        <dd>
+          public void <strong>ban</strong> ( <a href="#StoreCore-User">\StoreCore\User</a> <var>$user</var> )<br>
+          public <a href="#StoreCore-User">\StoreCore\User</a>|null <strong>getUserByEmailAddress</strong> ( string <var>$email_address</var> )<br>
+          public <a href="#StoreCore-User">\StoreCore\User</a>|null <strong>getUserByUsername</strong> ( string <var>$username</var> )<br>
+          public bool <strong>save</strong> ( <a href="#StoreCore-User">\StoreCore\User</a> <var>&amp;$user</var> )
+        </dd>
+      </dl>
+      <dl id="StoreCore-Database-Users">
+        <dt>class <strong>\StoreCore\Database\Users</strong> extends <a href="#StoreCore-Database-AbstractModel">\StoreCore\Database\AbstractModel</a> implements <a href="https://secure.php.net/countable">\Countable</a></dt>
+        <dd>public int <strong>count</strong> ( void )</dd>
+      </dl>
       <h3>Namespace StoreCore\FileSystem</h3>
       <dl id="StoreCore-FileSystem-Logger">
         <dt>class <strong>\StoreCore\FileSystem\Logger</strong> extends <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md#3-psrlogloggerinterface">\Psr\Log\AbstractLogger</a> implements <a href="#StoreCore-SubjectInterface">\StoreCore\SubjectInterface</a></dt>
