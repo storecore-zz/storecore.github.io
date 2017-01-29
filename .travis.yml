@@ -11,4 +11,4 @@ before_install:
 install:
  - pip install html5validator==0.2.5
 
-script: html5validator
+script: html5validator --root /home/travis/build/storecore/storecore.github.io/
