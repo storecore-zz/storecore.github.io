@@ -1,156 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<head>
+	<meta charset="utf-8">
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="./assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Ecommerce platform build for speed: StoreCore">
+	
+	<script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <link rel="dns-prefetch" href="https://code.getmdl.io/">
-    <link rel="dns-prefetch" href="https://www.google-analytics.com/">
+	<title>Introducing StoreCore, a new European e-commerce platform</title>
 
-    <title>StoreCore™</title>
-    <meta name="description" content="Introducing StoreCore, a new European e-commerce platform.">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="StoreCore™">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900&amp;text=Store" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://code.getmdl.io/1.3.0/material.light_green-blue.min.css" rel="stylesheet">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-    <link href="/images/StoreCore-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="/images/StoreCore-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-    <link href="/images/StoreCore-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-    <link href="/images/StoreCore-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
-    <link href="/images/StoreCore-icon-96x96.png" rel="icon" sizes="96x96" type="image/png">
-    <link href="/images/StoreCore-icon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="/images/StoreCore-icon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <meta name="msapplication-TileColor" content="#99cc00">
-    <meta name="msapplication-TileImage" content="/images/StoreCore-icon-144x144.png">
-    <meta name="theme-color" content="#99cc00">
-    <link rel="shortcut icon" href="/images/StoreCore-icon-64x64.png">
-
-    <style>
-      @media screen and (max-width: 1600px), screen and (max-height: 1200px) {
-        body {
-          background: url('http://storecore.io/images/Martinus-Nijhoffbrug-UXGA-1600x1200.jpg') no-repeat center center fixed;
-        }
-      }
-
-      @media screen and (max-width: 1920px), screen and (max-height: 1080px) {
-        body {
-          background: url('http://storecore.io/images/Martinus-Nijhoffbrug-FHD-1920x1080.jpg') no-repeat center center fixed;
-        }
-      }
-
-      @media screen and (min-width: 1601px), screen and (min-height: 1201px) {
-        body {
-          background: url('http://storecore.io/images/Martinus-Nijhoffbrug-UHD-3840x2160.jpg') no-repeat center center fixed;
-        }
-      }
-
-      body {
-        -webkit-background-size: cover;
-           -moz-background-size: cover;
-             -o-background-size: cover;
-                background-size: cover;
-      }
-
-      header {
-        background-color: #690;
-        color: #fff;
-        max-height: 38.197%;
-        text-align: center;
-      }
-
-      header h1 {
-        font-weight: 300;
-        margin: 0;
-        padding: 1em 0;
-        text-shadow: 1pt 1pt rgba(59, 89, 0, .87);
-      }
-
-      header h1 span {
-        font-weight: 900;
-      }
-
-      footer {
-        bottom: 0;
-        color: rgba(255, 255, 255, .7);
-        left: 0;
-        position: fixed;
-        right: 0;
-        text-align: center;
-      }
-
-      footer a {
-        color: inherit;
-      }
-    </style>
-
-    <style>
-      #clockdiv {
-        font-family: Roboto, sans-serif;
-        color: #fff;
-        display: inline-block;
-        text-align: center;
-        font-size: 30px;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-
-      #clockdiv > div {
-        border-radius: 3px;
-        background: rgba(0,0,0,.54);
-        display: inline-block;
-        padding: 10px;
-      }
-
-      #clockdiv div > span {
-        background: #000;
-        border-radius: 3px;
-        display: inline-block;
-        font-weight: 400;
-        padding: 15px;
-      }
-
-      #clockdiv .smalltext {
-        font-size: 14px;
-        font-weight: 400;
-        padding-top: 5px;
-      }
-
-      #clockdiv .daysdiv {
-        background: rgba(170,102,204,.87);
-      }
-
-      #clockdiv .days {
-        background: rgb(153,51,204);
-        font-weight: 700;
-      }
-
-      @media only screen and (max-width: 400px) {
-
-        #clockdiv > div {
-          padding: 6px;
-        }
-
-        #clockdiv div > span {
-          padding: 12px;
-        }
-
-        #clockdiv .smalltext {
-          font-size: 11px;
-        }
-      }
-    </style>
-
+	<!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/material-kit.css" rel="stylesheet"/>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -158,99 +29,286 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-80202349-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script>	
+</head>
 
-  </head>
-  <body>
-    <header>
-      <h1><span>Store</span>Core</h1>
-    </header>
-    <main>
+<body class="landing-page">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent">
+    	<div class="container">
+        	<!-- Brand and toggle get grouped for better mobile display -->
+        	<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+            		<span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+        		</button>
+        		<a class="navbar-brand" href="/"><span>Store</span>Core</a>
+        	</div>
 
-      <div style="padding:10% 0 10% 0;text-align:center">
-        <div id="clockdiv">
-          <div class="daysdiv">
-            <span class="days"></span>
-            <div class="smalltext">Days</div>
-          </div>
-          <div>
-            <span class="hours"></span>
-            <div class="smalltext">Hours</div>
-          </div>
-          <div>
-            <span class="minutes"></span>
-            <div class="smalltext">Minutes</div>
-          </div>
-          <div>
-            <span class="seconds"></span>
-            <div class="smalltext">Seconds</div>
-          </div>
+        	<div class="collapse navbar-collapse" id="navigation-example">
+        		<ul class="nav navbar-nav navbar-right">
+    				<li>
+						<a href="#beta">
+							<i class="material-icons">assignment</i> Sing up for Beta
+						</a>
+					</li>
+					<li>
+					<li>
+						<a href="./pricing" class="btn btn-white btn-simple">
+							<i class="material-icons">euro_symbol</i> Pricing
+						</a>
+					</li>
+					<li>
+						<a href="./contact-us" class="btn btn-white btn-simple">
+							<i class="material-icons">domain</i> Contact
+						</a>
+					</li>
+		            <li>
+		                <a href="https://twitter.com/StoreCoreHQ" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+							<i class="fa fa-twitter"></i>
+						</a>
+		            </li>
+		            <li>
+		                <a href="https://www.facebook.com/StoreCoreHQ/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+							<i class="fa fa-facebook-square"></i>
+						</a>
+		            </li>
+					<li>
+		            </li>
+        		</ul><a href="https://github.com/storecore" target="_blank" class="github-corner" aria-label="View source on Github"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        		</ul>
+        	</div>
+    	</div>
+    </nav>
+
+
+    <div class="page-header header-filter" data-parallax="active" style="background-image: url('./assets/img/mobile-smartphone-commerce.jpg');">
+        <div class="container">
+            <div class="row">
+<div class="col-md-6">
+						<h1 class="title"><span>Store</span>Core</h1>
+	                    <h4>just e-commerce</h4>
+	                    <br />
+	                    <a href="./release-schedule?utm_source=clock&utm_medium=storecore&utm_campaign=launch" class="btn btn-primary btn-raised btn-lg">
+							<i class="material-icons">date_range</i> Release Schedule
+						</a>
+					</div>
+					<div class="col-md-6">
+					<h1 class="title"><span>Count</span>Down</h1>
+					<h4>we're coming</h4>
+	                    <br />
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+
+					</div>
+                </div>
+            </div>
         </div>
 
-        <div style="padding-top:1em;text-align:center">
-          <form action="http://storecore.io/help-topics/developer-guide/release-schedule/" method="get">
-            <input type="hidden" name="utm_source" value="clock">
-            <input type="hidden" name="utm_medium" value="storecore">
-            <input type="hidden" name="utm_campaign" value="launch">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-              <i class="material-icons">event</i> Release schedule
-            </button>
-          </form>
+		<div class="main main-raised">
+		<div class="container">
+	    	<div class="section text-center">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="title">Let's talk StoreCore</h2>
+	                        <h5 class="description">Tired of all those software updates or a slow webshop ? Keep on reading!
+We introduce to you: StoreCore; The first open source e-commerce platform build by and for you.
+We build not only the fastest e-commerce platform that there is today, (loads only in 0.5s) but we also put mobile first. Yes, from now on you can run your online store from the palm of your hand.  
+We at StoreCore are therefore proud to present to you a dedicated e-commerce platform that grows with you. </h5>
+							<h3 class="description">StoreCore: Just what you need in an E-commerce platform</h3>
+	                    </div>
+	                </div>
+
+					<div class="features">
+						<div class="row">
+						<h2 class="title">Why choose StoreCore</h2>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">phone_android</i>
+									</div>
+									<h4 class="info-title">Mobile First</h4>
+									<p>Why not start with mobile? Everyone is using their phones today for almost everything. NOW u can use your phone for your business.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-success">
+										<i class="material-icons">whatshot</i>
+									</div>
+									<h4 class="info-title">High Performance</h4>
+									<p>We are doing everything to set our goals high. Performance is just one of goals to make your e-commerce site the fastest one.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">fingerprint</i>
+									</div>
+									<h4 class="info-title">Security</h4>
+									<p>StoreCore is build with security in mind. Not only will you get a free SSL certificate. We also have the best hosting provider.</p>
+								</div>
+		                    </div>
+		                </div>
+					</div>
+					<div class="features">
+						<div class="row">
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">local_grocery_store</i>
+									</div>
+									<h4 class="info-title">Dedicated Commerce Platform</h4>
+									<p>It is not a blog, community, wiki or kowledgebase. It's JUST an dedicated E-commerce platform. Build by and with E-commerce professionals.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-success">
+										<i class="material-icons">autorenew</i>
+									</div>
+									<h4 class="info-title">Evergreen</h4>
+									<p>Updating your store can be a pain in the A**. But not with StoreCore. We update automaticly the core. Automatic Update Yep, that's it. It's that simple.</p>
+								</div>
+		                    </div>
+		                    <div class="col-md-4">
+								<div class="info">
+									<div class="icon icon-primary">
+										<i class="material-icons">transform</i>
+									</div>
+									<h4 class="info-title">Scalability</h4>
+									<p>Start small or big, that's no problem with StoreCore. Our software and apps grow with your company. Just try it yourself.</p>
+								</div>
+		                    </div>
+		                </div>
+					</div>
+	            </div>
+            </div>
+        	<div class="section section-contacts">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+					<a name="beta"></a> 
+                        <h2 class="text-center title">Signing Up for Future Beta Tests</h2>
+						<h4 class="text-center description">We send out a limited number of invitations, based on several criteria. Customer service cannot assist with beta access, but if you’re interested you’ll want to sign up here.
+
+If you are selected to participate in a beta test, you'll receive an email with information on how to install the client and provide feedback.</h4>
+                        <!--<form action="mailto:replup@gmail.com" enctype="text/plain">
+                            <div class="row">
+                                <div class="col-md-6">
+									<div class="form-group label-floating">
+										<label class="control-label">Your Name</label>
+										<input type="name" class="form-control">
+									</div>
+                                </div>
+                                <div class="col-md-6">
+									<div class="form-group label-floating">
+										<label class="control-label">Your Email</label>
+										<input type="email" class="form-control">
+									</div>
+                                </div>
+                            </div>
+
+							<div class="form-group label-floating">
+								<label class="control-label">Your Messge</label>
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4 text-center">
+                                    <button class="btn btn-primary btn-raised">
+										Send Message
+									</button>
+                                </div>
+                            </div>
+                        </form>--> 
+<script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
+<style type="text/css" media="screen, projection">
+	@import url(http://assets.freshdesk.com/widget/freshwidget.css); 
+</style> 
+<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://storecore.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=StoreCore+Form&screenshot=no&searchArea=no" scrolling="no" height="500px" width="100%" frameborder="0" >
+</iframe>
+						</div>
+                </div>
+            </div>
         </div>
 
-      </div>
-
-    </main>
-    <footer>
-      <p>
-        Copyright © 2014–2017 StoreCore™. All rights reserved. <br>
-        Photos courtesy of <a href="https://beeldbank.rws.nl/">Rijkswaterstaat / RWS</a>, Ministerie van Infrastructuur en Milieu.
-      </p>
+	</div>
+     </body>
+</html>
+    <footer class="footer">
+        <div class="container">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="http://storecore.io">
+                            StoreCore
+                        </a>
+                    </li>
+					<li>
+                        <a href="http://storecore.io">
+                           About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://storecore.io">
+                           Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://storecore.io">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright pull-right">
+                &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Team StoreCore
+            </div>
+        </div>
     </footer>
-  </body>
 
-  <script>
-    function getTimeRemaining(endtime) {
-      var t = Date.parse(endtime) - Date.parse(new Date());
-      var seconds = Math.floor((t / 1000) % 60);
-      var minutes = Math.floor((t / 1000 / 60) % 60);
-      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-      return {
-        'total': t,
-        'days': days,
-        'hours': hours,
-        'minutes': minutes,
-        'seconds': seconds
-      };
-    }
+</body>
+	<!--   Core JS Files   -->
+	<script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./assets/js/material.min.js"></script>
 
-    function initializeClock(id, endtime) {
-      var clock = document.getElementById(id);
-      var daysSpan = clock.querySelector('.days');
-      var hoursSpan = clock.querySelector('.hours');
-      var minutesSpan = clock.querySelector('.minutes');
-      var secondsSpan = clock.querySelector('.seconds');
+	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="./assets/js/nouislider.min.js" type="text/javascript"></script>
 
-      function updateClock() {
-        var t = getTimeRemaining(endtime);
+	<!--	Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="./assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
 
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+	<!--	Plugin for Select Form control, full documentation here: https://github.com/FezVrasta/dropdown.js -->
+	<script src="./assets/js/jquery.dropdown.js" type="text/javascript"></script>
 
-        if (t.total <= 0) {
-          clearInterval(timeinterval);
-        }
-      }
+	<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+	<script src="./assets/js/jquery.tagsinput.js"></script>
 
-      updateClock();
-      var timeinterval = setInterval(updateClock, 1000);
-    }
+	<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+	<script src="./assets/js/jasny-bootstrap.min.js"></script>
 
-    var deadline = '2017-01-31T13:00:00Z';
-    initializeClock('clockdiv', deadline);
-  </script>
+	<!-- Plugin For Google Maps -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="./assets/js/material-kit.js" type="text/javascript"></script>
 
 </html>
