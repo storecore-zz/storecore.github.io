@@ -45,8 +45,9 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
   line-height: 1.5em;
 }
 
+.lead,
 .serif-font {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -4108,7 +4109,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
       &.tag-primary .tagsinput-add{
           color: $primary-color;
       }
-  
+
       &.tag-success .tag{
            background-color: $success-color;
       }
