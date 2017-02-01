@@ -6556,12 +6556,13 @@ h1{
 }
 
 #clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  white-space: nowrap;
 }
 
 #clockdiv > div{
@@ -6577,6 +6578,20 @@ h1{
 	background: rgba(0,0,0,.54);
 	display: inline-block;
 }
+
+@media screen and (max-width: 400px) {
+
+  #clockdiv > div {
+    padding: 6px;
+  }
+
+  #clockdiv div > span {
+    padding: 10px;
+  }
+
+}
+
+
 
 .smalltext{
 	padding-top: 5px;
