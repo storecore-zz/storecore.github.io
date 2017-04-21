@@ -1,441 +1,397 @@
 <!doctype html>
-<html amp lang="en">
-  <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Ecommerce platform build for speed: StoreCore">
 
-    <title>StoreCore:</title>
-    <link href="http://storecore.io/plans-and-pricing/" rel="canonical">
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 
-    <meta name="robots" content="index,follow">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Introducing StoreCore, a new European e-commerce platform</title>
 
-    <link rel="apple-touch-icon-precomposed" href="/images/StoreCore-icon-152x152.png">
-    <meta name="msapplication-TileColor" content="#dcedc8">
-    <meta name="msapplication-TileImage" content="/images/StoreCore-icon-144x144.png">
-    <link href="/images/StoreCore-icon-196x196.png" rel="shortcut icon" sizes="196x196">
-    <link href="/images/StoreCore-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-    <link href="/images/StoreCore-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-    <link href="/images/StoreCore-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="/images/StoreCore-icon-196x196.png" rel="icon" sizes="196x196">
-    <link href="/images/StoreCore-icon-152x152.png" rel="icon" sizes="152x152">
-    <link href="/images/StoreCore-icon-144x144.png" rel="icon" sizes="144x144">
-    <link href="/images/StoreCore-icon-114x114.png" rel="icon" sizes="114x114">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "url": "http://storecore.io/",
-      "description": "StoreCore",
-      "copyrightYear": 2017,
-      "datePublished": "2016-06-26T05:04:12Z",
-      "dateModified": "2017-04-21T12:52:31Z",
-      "creator": {
-        "@type": "Organization",
-        "name": "StoreCore",
-        "url": "http://storecore.io/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "http://storecore.io/images/StoreCore-icon-144x144.png",
-          "width": 144,
-          "height": 144
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+  <!-- CSS Files -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/material-kit.css" rel="stylesheet"/>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-80202349-1', 'auto');
+    ga('send', 'pageview');
+  </script>	
+</head>
+
+<body class="landing-page">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><span>Store</span>Core</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navigation-example">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#beta">
+              <i class="material-icons">assignment</i> Sign up for Beta
+            </a>
+          </li>
+          <li>
+            <a href="./pricing" class="btn btn-white btn-simple">
+              <i class="material-icons">euro_symbol</i> Pricing
+            </a>
+          </li>
+          <li>
+            <a href="./contact-us" class="btn btn-white btn-simple">
+              <i class="material-icons">domain</i> Contact
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/StoreCoreHQ" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/StoreCoreHQ/" target="_blank" class="btn btn-simple btn-white btn-just-icon">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+          </li>
+        </ul>
+        <a href="https://github.com/storecore" target="_blank" class="github-corner" aria-label="View source on Github"><svg width="70" height="70" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header header-filter" data-parallax="active" style="background-image: url('./assets/img/mobile-smartphone-commerce.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="title"><span>Store</span>Core</h1>
+          <h4>just e-commerce</h4>
+          <br />
+          <!--
+          <a href="./release-schedule?utm_source=clock&utm_medium=storecore&utm_campaign=launch" class="btn btn-primary btn-raised btn-lg">
+            <i class="material-icons">date_range</i> Release Schedule
+          </a>
+          -->
+        </div>
+        <div class="col-md-6">
+          <!--
+          <h1 class="title"><span>Count</span>Down</h1>
+          <h4>release candidate 1 (1.0.0-rc.1)</h4>
+          <br />
+          <div id="clockdiv">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="title">Let’s talk StoreCore</h2>
+            <p class="lead">
+              Tired of all those software updates or a slow webshop? Keep on
+              reading!  We introduce to you: StoreCore, the first open source
+              e-commerce platform built by and for you.  We are building not
+              only the fastest e-commerce platform that there is today (loads
+              in just 0.5&nbsp;s), but we also put mobile first.  Yes, from now
+              on you can run your online store from the palm of your hand.
+              We at StoreCore are therefore proud to present to you a dedicated
+              e-commerce platform that grows with you.
+            </p>
+            <h3 class="description">StoreCore: just what you need in an E-commerce platform</h3>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="row">
+            <h2 class="title">Why choose StoreCore</h2>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-primary">
+                  <i class="material-icons">phone_android</i>
+                </div>
+                <h4 class="info-title">Mobile First</h4>
+                <p>
+                  Why not start with mobile? Everyone is using their phones
+                  today for almost everything.  Now you can use your phone
+                  for your business.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">whatshot</i>
+                </div>
+                <h4 class="info-title">High Performance</h4>
+                <p>
+                  We are doing everything to set our goals high. Performance
+                  is just one of goals to make your e-commerce site the
+                  fastest one.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-primary">
+                  <i class="material-icons">fingerprint</i>
+                </div>
+                <h4 class="info-title">Security</h4>
+                <p>
+                  StoreCore is build with security in mind.  Not only will
+                  you get a free SSL certificate.  We also provide the best
+                  dedicated hosting services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-primary">
+                  <i class="material-icons">local_grocery_store</i>
+                </div>
+                <h4 class="info-title">Dedicated Commerce Platform</h4>
+                <p>
+                  It is not a blog, community, wiki or knowledgebase.  It’s JUST
+                  a dedicated e-commerce platform.  Built by, for and with
+                  e-commerce professionals.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-success">
+                  <i class="material-icons">autorenew</i>
+                </div>
+                <h4 class="info-title">Evergreen</h4>
+                <p>
+                  Updating your store can be a pain in the … blind spot.  But
+                  not with StoreCore.  We simply update the core automatically.
+                  Automatic updates.  Continuous deployment.  Yep, that’s it.
+                  It’s that simple.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="icon icon-primary">
+                  <i class="material-icons">transform</i>
+                </div>
+                <h4 class="info-title">Scalability</h4>
+                <p>
+                  Start small or big: have it your way with StoreCore.  Our
+                  software and apps grow with your company.  Just try it yourself.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-contacts">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <a name="beta"></a>
+            <h2 class="text-center title">Signing Up for Future Beta Tests</h2>
+            <h4 class="text-center description">
+              We send out a limited number of invitations, based on several
+              criteria.  Customer service cannot assist with beta access,  but
+              if you’re interested, you’ll want to sign up here.  If you are
+              selected to participate in a beta test, you’ll receive an email
+              with information on how to install the client and provide feedback.
+            </h4>
+                        <!--<form action="mailto:replup@gmail.com" enctype="text/plain">
+                            <div class="row">
+                                <div class="col-md-6">
+									<div class="form-group label-floating">
+										<label class="control-label">Your Name</label>
+										<input type="name" class="form-control">
+									</div>
+                                </div>
+                                <div class="col-md-6">
+									<div class="form-group label-floating">
+										<label class="control-label">Your Email</label>
+										<input type="email" class="form-control">
+									</div>
+                                </div>
+                            </div>
+
+							<div class="form-group label-floating">
+								<label class="control-label">Your Messge</label>
+								<textarea class="form-control" rows="4"></textarea>
+							</div>
+
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-4 text-center">
+                                    <button class="btn btn-primary btn-raised">
+										Send Message
+									</button>
+                                </div>
+                            </div>
+                        </form>-->
+<script type="text/javascript" src="http://assets.freshdesk.com/widget/freshwidget.js"></script>
+<style type="text/css" media="screen, projection">
+	@import url(http://assets.freshdesk.com/widget/freshwidget.css);
+</style>
+<iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://storecore.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=StoreCore+Form&screenshot=no&searchArea=no" scrolling="no" height="500px" width="100%" frameborder="0" >
+</iframe>
+						</div>
+                </div>
+            </div>
+        </div>
+
+	</div>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="pull-left">
+        <ul>
+          <li>
+            <a href="http://storecore.io/">StoreCore</a>
+          </li>
+<!--
+          <li>
+            <a href="http://storecore.io">About Us</a>
+          </li>
+-->
+          <li>
+            <a href="/credits/">Credits</a>
+          </li>
+          <li>
+            <a href="/blog/">Blog</a>
+          </li>
+          <li>
+            <a href="/api/" title="API (application programming interface)">API</a>
+          </li>
+<!--
+          <li>
+            <a href="http://storecore.io">Licenses</a>
+          </li>
+-->
+        </ul>
+      </nav>
+      <div class="copyright pull-right">
+        &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Team StoreCore
+      </div>
+    </div>
+  </footer>
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="./assets/js/material.min.js"></script>
+
+	<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="./assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--	Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<script src="./assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+	<!--	Plugin for Select Form control, full documentation here: https://github.com/FezVrasta/dropdown.js -->
+	<script src="./assets/js/jquery.dropdown.js" type="text/javascript"></script>
+
+	<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+	<script src="./assets/js/jquery.tagsinput.js"></script>
+
+	<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+	<script src="./assets/js/jasny-bootstrap.min.js"></script>
+
+	<!-- Plugin For Google Maps -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="./assets/js/material-kit.js" type="text/javascript"></script>
+
+  <!-- Countdown clock -->
+  <script>
+    function getTimeRemaining(endtime) {
+      var t = Date.parse(endtime) - Date.parse(new Date());
+      var seconds = Math.floor((t / 1000) % 60);
+      var minutes = Math.floor((t / 1000 / 60) % 60);
+      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+      };
+    }
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
         }
       }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
     }
-    </script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:900&amp;text=Store" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <style amp-custom>
-      :root{--font-stack:Roboto,"Droid Sans","Helvetica Neue","Segoe UI",Arial,sans-serif;}
-      html{color:rgba(0,0,0,.87);height:100%;-ms-touch-action:manipulation;touch-action:manipulation;width:100%}
-      html,body{font:400 14px/20px Roboto,sans-serif}
-      body{cursor:default;margin:0;min-height:100%;width:100%}
-      article,footer,header,main{display:block}
-      ::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}
-      hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-      audio,canvas,iframe,img,svg,video{vertical-align:middle}
-      a,.mdl-accordion,.mdl-button,.mdl-card,.mdl-checkbox,.mdl-dropdown-menu,.mdl-icon-toggle,.mdl-item,.mdl-radio,.mdl-slider,.mdl-switch,.mdl-tabs__tab{-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:rgba(255,255,255,0)}
-      h1,h2,h3,h4,p{font-family:Roboto,sans-serif;font-weight:400;padding:0}
-      h1{font-size:56px;line-height:1.35;letter-spacing:-.02em;margin:24px 0}
-      h2{font-size:45px;line-height:48px}
-      h2,h3{margin:24px 0}
-      h3{font-size:34px;line-height:40px}
-      h4{font-size:24px;line-height:32px;-moz-osx-font-smoothing:grayscale;margin:24px 0 16px}
-      p{font-size:14px;font-weight:400;letter-spacing:0;line-height:24px;margin:0 0 16px}
-      dt{font-weight:700}
-      address{font-size:12px;line-height:1;font-style:normal}
-      address,ul,ol{font-weight:400;letter-spacing:0}
-      ul,ol{font-size:14px;line-height:24px}
-      a{color:rgb(64,196,255);font-weight:500;text-decoration:none}
-      mark{background-color:#f4ff81}
-
-      .material-icons{font-family:"Material Icons";font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;word-wrap:normal;-moz-font-feature-settings:'liga';font-feature-settings:'liga';-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
-
-      .mdl-button{background:0 0;border:none;border-radius:2px;color:#000;position:relative;height:36px;margin:0;min-width:64px;padding:0 16px;display:inline-block;font-family:Roboto,sans-serif;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:none;cursor:pointer;text-decoration:none;text-align:center;line-height:36px;vertical-align:middle}
-      .mdl-button::-moz-focus-inner{border:0}
-      .mdl-button:hover{background-color:rgba(158,158,158,.2)}
-      .mdl-button:focus:not(:active){background-color:rgba(0,0,0,.12)}
-      .mdl-button:active{background-color:rgba(158,158,158,.4)}
-      .mdl-button.mdl-button--colored{color:rgb(139,195,74)}
-      .mdl-button.mdl-button--colored:focus:not(:active){background-color:rgba(0,0,0,.12)}
-      input.mdl-button[type="submit"]{-webkit-appearance:none}
-      .mdl-button--raised{background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}
-      .mdl-button--raised:active{box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);background-color:rgba(158,158,158,.4)}
-      .mdl-button--raised:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}
-      .mdl-button--raised.mdl-button--colored{background:rgb(139,195,74);color:rgb(66,66,66)}
-      .mdl-button--raised.mdl-button--colored:hover{background-color:rgb(139,195,74)}
-      .mdl-button--raised.mdl-button--colored:active{background-color:rgb(139,195,74)}
-      .mdl-button--raised.mdl-button--colored:focus:not(:active){background-color:rgb(139,195,74)}
-      .mdl-button--fab{border-radius:50%;font-size:24px;height:56px;margin:auto;min-width:56px;width:56px;padding:0;overflow:hidden;background:rgba(158,158,158,.2);box-shadow:0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);position:relative;line-height:normal}
-      .mdl-button--fab .material-icons{position:absolute;top:50%;left:50%;-webkit-transform:translate(-12px,-12px);transform:translate(-12px,-12px);line-height:24px;width:24px}
-      .mdl-button--fab.mdl-button--mini-fab{height:40px;min-width:40px;width:40px}
-      .mdl-button--fab:active{box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);background-color:rgba(158,158,158,.4)}
-      .mdl-button--fab:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}
-      .mdl-button--fab.mdl-button--colored{background:rgb(64,196,255);color:rgb(66,66,66)}
-      .mdl-button--fab.mdl-button--colored:hover{background-color:rgb(64,196,255)}
-      .mdl-button--fab.mdl-button--colored:focus:not(:active){background-color:rgb(64,196,255)}
-      .mdl-button--fab.mdl-button--colored:active{background-color:rgb(64,196,255)}
-      .mdl-button--icon{border-radius:50%;font-size:24px;height:32px;margin-left:0;margin-right:0;min-width:32px;width:32px;padding:0;overflow:hidden;color:inherit;line-height:normal}
-      .mdl-button--icon .material-icons{position:absolute;top:50%;left:50%;-webkit-transform:translate(-12px,-12px);transform:translate(-12px,-12px);line-height:24px;width:24px}
-      .mdl-button--icon.mdl-button--mini-icon{height:24px;min-width:24px;width:24px}
-      .mdl-button--icon.mdl-button--mini-icon .material-icons{top:0;left:0}
-      .mdl-button--primary.mdl-button--primary{color:rgb(139,195,74)}
-      .mdl-button--primary.mdl-button--primary.mdl-button--raised,.mdl-button--primary.mdl-button--primary.mdl-button--fab{color:rgb(66,66,66);background-color:rgb(139,195,74)}
-      .mdl-button--accent.mdl-button--accent{color:rgb(255,255,255)}
-      .mdl-button--accent.mdl-button--accent.mdl-button--raised,.mdl-button--accent.mdl-button--accent.mdl-button--fab{color:rgb(66,66,66);background-color:rgb(64,196,255)}
-      .mdl-button[disabled][disabled],.mdl-button.mdl-button--disabled.mdl-button--disabled{color:rgba(0,0,0,.26);cursor:default;background-color:transparent}
-      .mdl-button--fab[disabled][disabled],.mdl-button--fab.mdl-button--disabled.mdl-button--disabled{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.26)}
-      .mdl-button--raised[disabled][disabled],.mdl-button--raised.mdl-button--disabled.mdl-button--disabled{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.26);box-shadow:none}
-      .mdl-button--colored[disabled][disabled],.mdl-button--colored.mdl-button--disabled.mdl-button--disabled{color:rgba(0,0,0,.26)}
-      .mdl-button .material-icons{vertical-align:middle}
-
-      .mdl-navigation{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;box-sizing:border-box}
-      .mdl-navigation__link{color:#424242;text-decoration:none;margin:0;font-size:14px;font-weight:400;line-height:24px;letter-spacing:0;opacity:.87}
-      .mdl-navigation__link .material-icons{vertical-align:middle}
-
-      .mdl-layout{width:100%;height:100%;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow-y:auto;overflow-x:hidden;position:relative;-webkit-overflow-scrolling:touch}
-      .mdl-layout.is-small-screen .mdl-layout--large-screen-only{display:none}
-      .mdl-layout:not(.is-small-screen) .mdl-layout--small-screen-only{display:none}
-      .mdl-layout__container{position:absolute;width:100%;height:100%}
-      .mdl-layout__title,.mdl-layout-title{display:block;position:relative;font-family:Roboto,sans-serif;font-size:20px;line-height:1;letter-spacing:.02em;font-weight:400;box-sizing:border-box}
-      .mdl-layout-spacer{-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}
-      .mdl-layout__drawer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;width:240px;height:100%;max-height:100%;position:absolute;top:0;left:0;box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);box-sizing:border-box;border-right:1px solid #e0e0e0;background:#fafafa;-webkit-transform:translateX(-250px);transform:translateX(-250px);-webkit-transform-style:preserve-3d;transform-style:preserve-3d;will-change:transform;transition-duration:.2s;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-property:transform;transition-property:transform,-webkit-transform;color:#424242;overflow:visible;overflow-y:auto;z-index:5}
-      .mdl-layout__drawer.is-visible{-webkit-transform:translateX(0);transform:translateX(0)}
-      .mdl-layout__drawer.is-visible~.mdl-layout__content.mdl-layout__content{overflow:hidden}
-      .mdl-layout__drawer>*{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}
-      .mdl-layout__drawer>.mdl-layout__title,.mdl-layout__drawer>.mdl-layout-title{line-height:64px;padding-left:40px}
-      @media screen and (max-width:1024px){.mdl-layout__drawer>.mdl-layout__title,.mdl-layout__drawer>.mdl-layout-title{line-height:56px;padding-left:16px}}
-      .mdl-layout__drawer .mdl-navigation{-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;padding-top:16px}
-      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link{display:block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;padding:16px 40px;margin:0;color:#212121}
-      @media screen and (max-width:1024px){.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{padding:16px}}
-      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover{background-color:#e0e0e0}
-      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link--current{background-color:#e0e0e0;color:#000}
-      @media screen and (min-width:1025px){.mdl-layout--fixed-drawer>.mdl-layout__drawer{-webkit-transform:translateX(0);transform:translateX(0)}}
-      .mdl-layout__drawer-button{display:block;position:absolute;height:48px;width:48px;border:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;overflow:hidden;text-align:center;cursor:pointer;font-size:26px;line-height:56px;font-family:Helvetica,Arial,sans-serif;margin:8px 12px;top:0;left:0;color:rgb(66,66,66);z-index:4}
-      .mdl-layout__header .mdl-layout__drawer-button{position:absolute;color:rgb(66,66,66);background-color:inherit}
-      @media screen and (max-width:1024px){.mdl-layout__header .mdl-layout__drawer-button{margin:4px}}
-      @media screen and (max-width:1024px){.mdl-layout__drawer-button{margin:4px;color:rgba(0,0,0,.5)}}
-      @media screen and (min-width:1025px){.mdl-layout__drawer-button{line-height:54px}.mdl-layout--no-desktop-drawer-button .mdl-layout__drawer-button,.mdl-layout--fixed-drawer>.mdl-layout__drawer-button,.mdl-layout--no-drawer-button .mdl-layout__drawer-button{display:none}}
-      .mdl-layout__header{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;box-sizing:border-box;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;width:100%;margin:0;padding:0;border:none;min-height:64px;max-height:1000px;z-index:3;background-color:rgb(139,195,74);color:rgb(66,66,66);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);transition-duration:.2s;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-property:max-height,box-shadow}
-      @media screen and (max-width:1024px){.mdl-layout__header{min-height:56px}}
-      @media screen and (min-width:1025px){.mdl-layout--fixed-drawer>.mdl-layout__header .mdl-layout__header-row{padding-left:40px}}
-      .mdl-layout__header>.mdl-layout-icon{position:absolute;left:40px;top:16px;height:32px;width:32px;overflow:hidden;z-index:3;display:block}
-      @media screen and (max-width:1024px){.mdl-layout__header>.mdl-layout-icon{left:16px;top:12px}}
-      .mdl-layout.has-drawer .mdl-layout__header>.mdl-layout-icon{display:none}
-      .mdl-layout__header.is-compact{max-height:64px}
-      @media screen and (max-width:1024px){.mdl-layout__header.is-compact{max-height:56px}}
-      .mdl-layout__header.is-compact.has-tabs{height:112px}
-      @media screen and (max-width:1024px){.mdl-layout__header.is-compact.has-tabs{min-height:104px}}
-      @media screen and (max-width:1024px){.mdl-layout--fixed-header>.mdl-layout__header{display:-webkit-flex;display:-ms-flexbox;display:flex}}
-      .mdl-layout__header--transparent.mdl-layout__header--transparent{background-color:transparent;box-shadow:none}
-      .mdl-layout__header--seamed,.mdl-layout__header--scroll{box-shadow:none}
-      .mdl-layout__header--waterfall{box-shadow:none;overflow:hidden}
-      .mdl-layout__header--waterfall.is-casting-shadow{box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}
-      .mdl-layout__header--waterfall.mdl-layout__header--waterfall-hide-top{-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
-      .mdl-layout__header-row{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;box-sizing:border-box;-webkit-align-self:stretch;-ms-flex-item-align:stretch;align-self:stretch;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:64px;margin:0;padding:0 40px 0 80px}
-      .mdl-layout--no-drawer-button .mdl-layout__header-row{padding-left:40px}
-      @media screen and (min-width:1025px){.mdl-layout--no-desktop-drawer-button .mdl-layout__header-row{padding-left:40px}}
-      @media screen and (max-width:1024px){.mdl-layout__header-row{height:56px;padding:0 16px 0 72px}.mdl-layout--no-drawer-button .mdl-layout__header-row{padding-left:16px}}
-      .mdl-layout__header-row>*{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0}
-      .mdl-layout__header--scroll .mdl-layout__header-row{width:100%}
-      .mdl-layout__header-row .mdl-navigation{margin:0;padding:0;height:64px;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-      @media screen and (max-width:1024px){.mdl-layout__header-row .mdl-navigation{height:56px}}
-      .mdl-layout__header-row .mdl-navigation__link{display:block;color:rgb(66,66,66);line-height:64px;padding:0 24px}
-      @media screen and (max-width:1024px){.mdl-layout__header-row .mdl-navigation__link{line-height:56px;padding:0 16px}}
-      .mdl-layout__obfuscator{background-color:transparent;position:absolute;top:0;left:0;height:100%;width:100%;z-index:4;visibility:hidden;transition-property:background-color;transition-duration:.2s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
-      .mdl-layout__obfuscator.is-visible{background-color:rgba(0,0,0,.5);visibility:visible}
-      @supports (pointer-events:auto){.mdl-layout__obfuscator{background-color:rgba(0,0,0,.5);opacity:0;transition-property:opacity;visibility:visible;pointer-events:none}.mdl-layout__obfuscator.is-visible{pointer-events:auto;opacity:1}}
-      .mdl-layout__content{-ms-flex:0 1 auto;position:relative;display:inline-block;overflow-y:auto;overflow-x:hidden;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;z-index:1;-webkit-overflow-scrolling:touch}
-      .mdl-layout--fixed-drawer>.mdl-layout__content{margin-left:240px}
-      .mdl-layout__container.has-scrolling-header .mdl-layout__content{overflow:visible}
-      @media screen and (max-width:1024px){.mdl-layout--fixed-drawer>.mdl-layout__content{margin-left:0}.mdl-layout__container.has-scrolling-header .mdl-layout__content{overflow-y:auto;overflow-x:hidden}}
-      .mdl-layout__tab-bar{height:96px;margin:0;width:calc(100% - 112px);padding:0 0 0 56px;display:-webkit-flex;display:-ms-flexbox;display:flex;background-color:rgb(139,195,74);overflow-y:hidden;overflow-x:scroll}
-      .mdl-layout__tab-bar::-webkit-scrollbar{display:none}
-      .mdl-layout--no-drawer-button .mdl-layout__tab-bar{padding-left:16px;width:calc(100% - 32px)}
-      @media screen and (min-width:1025px){.mdl-layout--no-desktop-drawer-button .mdl-layout__tab-bar{padding-left:16px;width:calc(100% - 32px)}}
-      @media screen and (max-width:1024px){.mdl-layout__tab-bar{width:calc(100% - 60px);padding:0 0 0 60px}.mdl-layout--no-drawer-button .mdl-layout__tab-bar{width:calc(100% - 8px);padding-left:4px}}
-      .mdl-layout--fixed-tabs .mdl-layout__tab-bar{padding:0;overflow:hidden;width:100%}
-      .mdl-layout__tab-bar-container{position:relative;height:48px;width:100%;border:none;margin:0;z-index:2;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;overflow:hidden}
-      .mdl-layout__container>.mdl-layout__tab-bar-container{position:absolute;top:0;left:0}
-      .mdl-layout__tab-bar-button{display:inline-block;position:absolute;top:0;height:48px;width:56px;z-index:4;text-align:center;background-color:rgb(139,195,74);color:transparent;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
-      .mdl-layout--no-desktop-drawer-button .mdl-layout__tab-bar-button,.mdl-layout--no-drawer-button .mdl-layout__tab-bar-button{width:16px}
-      .mdl-layout--no-desktop-drawer-button .mdl-layout__tab-bar-button .material-icons,.mdl-layout--no-drawer-button .mdl-layout__tab-bar-button .material-icons{position:relative;left:-4px}
-      @media screen and (max-width:1024px){.mdl-layout__tab-bar-button{width:60px}}
-      .mdl-layout--fixed-tabs .mdl-layout__tab-bar-button{display:none}
-      .mdl-layout__tab-bar-button .material-icons{line-height:48px}
-      .mdl-layout__tab-bar-button.is-active{color:rgb(66,66,66)}
-      .mdl-layout__tab-bar-left-button{left:0}
-      .mdl-layout__tab-bar-right-button{right:0}
-      .mdl-layout__tab{margin:0;border:none;padding:0 24px;float:left;position:relative;display:block;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;text-decoration:none;height:48px;line-height:48px;text-align:center;font-weight:500;font-size:14px;text-transform:uppercase;color:rgba(66,66,66,.6);overflow:hidden}
-      @media screen and (max-width:1024px){.mdl-layout__tab{padding:0 12px}}
-      .mdl-layout--fixed-tabs .mdl-layout__tab{float:none;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding:0}
-      .mdl-layout__tab-panel{display:block}
-
-      .mdl-grid{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;margin:0 auto;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
-      .mdl-grid.mdl-grid--no-spacing{padding:0}
-      .mdl-cell{box-sizing:border-box}
-      .mdl-cell--top{-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start}
-      .mdl-cell--middle{-webkit-align-self:center;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
-      .mdl-cell--bottom{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end}
-      .mdl-cell--stretch{-webkit-align-self:stretch;-ms-flex-item-align:stretch;-ms-grid-row-align:stretch;align-self:stretch}
-      .mdl-grid.mdl-grid--no-spacing>.mdl-cell{margin:0}
-      .mdl-cell--order-1{-webkit-order:1;-ms-flex-order:1;order:1}.mdl-cell--order-2{-webkit-order:2;-ms-flex-order:2;order:2}.mdl-cell--order-3{-webkit-order:3;-ms-flex-order:3;order:3}.mdl-cell--order-4{-webkit-order:4;-ms-flex-order:4;order:4}.mdl-cell--order-5{-webkit-order:5;-ms-flex-order:5;order:5}.mdl-cell--order-6{-webkit-order:6;-ms-flex-order:6;order:6}.mdl-cell--order-7{-webkit-order:7;-ms-flex-order:7;order:7}.mdl-cell--order-8{-webkit-order:8;-ms-flex-order:8;order:8}.mdl-cell--order-9{-webkit-order:9;-ms-flex-order:9;order:9}.mdl-cell--order-10{-webkit-order:10;-ms-flex-order:10;order:10}.mdl-cell--order-11{-webkit-order:11;-ms-flex-order:11;order:11}.mdl-cell--order-12{-webkit-order:12;-ms-flex-order:12;order:12}
-      @media (max-width:479px){.mdl-grid{padding:8px}.mdl-cell{margin:8px;width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell{width:100%}.mdl-cell--hide-phone{display:none}.mdl-cell--order-1-phone.mdl-cell--order-1-phone{-webkit-order:1;-ms-flex-order:1;order:1}.mdl-cell--order-2-phone.mdl-cell--order-2-phone{-webkit-order:2;-ms-flex-order:2;order:2}.mdl-cell--order-3-phone.mdl-cell--order-3-phone{-webkit-order:3;-ms-flex-order:3;order:3}.mdl-cell--order-4-phone.mdl-cell--order-4-phone{-webkit-order:4;-ms-flex-order:4;order:4}.mdl-cell--order-5-phone.mdl-cell--order-5-phone{-webkit-order:5;-ms-flex-order:5;order:5}.mdl-cell--order-6-phone.mdl-cell--order-6-phone{-webkit-order:6;-ms-flex-order:6;order:6}.mdl-cell--order-7-phone.mdl-cell--order-7-phone{-webkit-order:7;-ms-flex-order:7;order:7}.mdl-cell--order-8-phone.mdl-cell--order-8-phone{-webkit-order:8;-ms-flex-order:8;order:8}.mdl-cell--order-9-phone.mdl-cell--order-9-phone{-webkit-order:9;-ms-flex-order:9;order:9}.mdl-cell--order-10-phone.mdl-cell--order-10-phone{-webkit-order:10;-ms-flex-order:10;order:10}.mdl-cell--order-11-phone.mdl-cell--order-11-phone{-webkit-order:11;-ms-flex-order:11;order:11}.mdl-cell--order-12-phone.mdl-cell--order-12-phone{-webkit-order:12;-ms-flex-order:12;order:12}.mdl-cell--1-col,.mdl-cell--1-col-phone.mdl-cell--1-col-phone{width:calc(25% - 16px)}.mdl-grid--no-spacing>.mdl-cell--1-col,.mdl-grid--no-spacing>.mdl-cell--1-col-phone.mdl-cell--1-col-phone{width:25%}.mdl-cell--2-col,.mdl-cell--2-col-phone.mdl-cell--2-col-phone{width:calc(50% - 16px)}.mdl-grid--no-spacing>.mdl-cell--2-col,.mdl-grid--no-spacing>.mdl-cell--2-col-phone.mdl-cell--2-col-phone{width:50%}.mdl-cell--3-col,.mdl-cell--3-col-phone.mdl-cell--3-col-phone{width:calc(75% - 16px)}.mdl-grid--no-spacing>.mdl-cell--3-col,.mdl-grid--no-spacing>.mdl-cell--3-col-phone.mdl-cell--3-col-phone{width:75%}.mdl-cell--4-col,.mdl-cell--4-col-phone.mdl-cell--4-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--4-col,.mdl-grid--no-spacing>.mdl-cell--4-col-phone.mdl-cell--4-col-phone{width:100%}.mdl-cell--5-col,.mdl-cell--5-col-phone.mdl-cell--5-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--5-col,.mdl-grid--no-spacing>.mdl-cell--5-col-phone.mdl-cell--5-col-phone{width:100%}.mdl-cell--6-col,.mdl-cell--6-col-phone.mdl-cell--6-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--6-col,.mdl-grid--no-spacing>.mdl-cell--6-col-phone.mdl-cell--6-col-phone{width:100%}.mdl-cell--7-col,.mdl-cell--7-col-phone.mdl-cell--7-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--7-col,.mdl-grid--no-spacing>.mdl-cell--7-col-phone.mdl-cell--7-col-phone{width:100%}.mdl-cell--8-col,.mdl-cell--8-col-phone.mdl-cell--8-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--8-col,.mdl-grid--no-spacing>.mdl-cell--8-col-phone.mdl-cell--8-col-phone{width:100%}.mdl-cell--9-col,.mdl-cell--9-col-phone.mdl-cell--9-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--9-col,.mdl-grid--no-spacing>.mdl-cell--9-col-phone.mdl-cell--9-col-phone{width:100%}.mdl-cell--10-col,.mdl-cell--10-col-phone.mdl-cell--10-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--10-col,.mdl-grid--no-spacing>.mdl-cell--10-col-phone.mdl-cell--10-col-phone{width:100%}.mdl-cell--11-col,.mdl-cell--11-col-phone.mdl-cell--11-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--11-col,.mdl-grid--no-spacing>.mdl-cell--11-col-phone.mdl-cell--11-col-phone{width:100%}.mdl-cell--12-col,.mdl-cell--12-col-phone.mdl-cell--12-col-phone{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--12-col,.mdl-grid--no-spacing>.mdl-cell--12-col-phone.mdl-cell--12-col-phone{width:100%}.mdl-cell--1-offset,.mdl-cell--1-offset-phone.mdl-cell--1-offset-phone{margin-left:calc(25% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset-phone.mdl-cell--1-offset-phone{margin-left:25%}.mdl-cell--2-offset,.mdl-cell--2-offset-phone.mdl-cell--2-offset-phone{margin-left:calc(50% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset-phone.mdl-cell--2-offset-phone{margin-left:50%}.mdl-cell--3-offset,.mdl-cell--3-offset-phone.mdl-cell--3-offset-phone{margin-left:calc(75% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset-phone.mdl-cell--3-offset-phone{margin-left:75%}}
-      @media (min-width:480px) and (max-width:839px){.mdl-grid{padding:8px}.mdl-cell{margin:8px;width:calc(50% - 16px)}.mdl-grid--no-spacing>.mdl-cell{width:50%}.mdl-cell--hide-tablet{display:none}.mdl-cell--order-1-tablet.mdl-cell--order-1-tablet{-webkit-order:1;-ms-flex-order:1;order:1}.mdl-cell--order-2-tablet.mdl-cell--order-2-tablet{-webkit-order:2;-ms-flex-order:2;order:2}.mdl-cell--order-3-tablet.mdl-cell--order-3-tablet{-webkit-order:3;-ms-flex-order:3;order:3}.mdl-cell--order-4-tablet.mdl-cell--order-4-tablet{-webkit-order:4;-ms-flex-order:4;order:4}.mdl-cell--order-5-tablet.mdl-cell--order-5-tablet{-webkit-order:5;-ms-flex-order:5;order:5}.mdl-cell--order-6-tablet.mdl-cell--order-6-tablet{-webkit-order:6;-ms-flex-order:6;order:6}.mdl-cell--order-7-tablet.mdl-cell--order-7-tablet{-webkit-order:7;-ms-flex-order:7;order:7}.mdl-cell--order-8-tablet.mdl-cell--order-8-tablet{-webkit-order:8;-ms-flex-order:8;order:8}.mdl-cell--order-9-tablet.mdl-cell--order-9-tablet{-webkit-order:9;-ms-flex-order:9;order:9}.mdl-cell--order-10-tablet.mdl-cell--order-10-tablet{-webkit-order:10;-ms-flex-order:10;order:10}.mdl-cell--order-11-tablet.mdl-cell--order-11-tablet{-webkit-order:11;-ms-flex-order:11;order:11}.mdl-cell--order-12-tablet.mdl-cell--order-12-tablet{-webkit-order:12;-ms-flex-order:12;order:12}.mdl-cell--1-col,.mdl-cell--1-col-tablet.mdl-cell--1-col-tablet{width:calc(12.5% - 16px)}.mdl-grid--no-spacing>.mdl-cell--1-col,.mdl-grid--no-spacing>.mdl-cell--1-col-tablet.mdl-cell--1-col-tablet{width:12.5%}.mdl-cell--2-col,.mdl-cell--2-col-tablet.mdl-cell--2-col-tablet{width:calc(25% - 16px)}.mdl-grid--no-spacing>.mdl-cell--2-col,.mdl-grid--no-spacing>.mdl-cell--2-col-tablet.mdl-cell--2-col-tablet{width:25%}.mdl-cell--3-col,.mdl-cell--3-col-tablet.mdl-cell--3-col-tablet{width:calc(37.5% - 16px)}.mdl-grid--no-spacing>.mdl-cell--3-col,.mdl-grid--no-spacing>.mdl-cell--3-col-tablet.mdl-cell--3-col-tablet{width:37.5%}.mdl-cell--4-col,.mdl-cell--4-col-tablet.mdl-cell--4-col-tablet{width:calc(50% - 16px)}.mdl-grid--no-spacing>.mdl-cell--4-col,.mdl-grid--no-spacing>.mdl-cell--4-col-tablet.mdl-cell--4-col-tablet{width:50%}.mdl-cell--5-col,.mdl-cell--5-col-tablet.mdl-cell--5-col-tablet{width:calc(62.5% - 16px)}.mdl-grid--no-spacing>.mdl-cell--5-col,.mdl-grid--no-spacing>.mdl-cell--5-col-tablet.mdl-cell--5-col-tablet{width:62.5%}.mdl-cell--6-col,.mdl-cell--6-col-tablet.mdl-cell--6-col-tablet{width:calc(75% - 16px)}.mdl-grid--no-spacing>.mdl-cell--6-col,.mdl-grid--no-spacing>.mdl-cell--6-col-tablet.mdl-cell--6-col-tablet{width:75%}.mdl-cell--7-col,.mdl-cell--7-col-tablet.mdl-cell--7-col-tablet{width:calc(87.5% - 16px)}.mdl-grid--no-spacing>.mdl-cell--7-col,.mdl-grid--no-spacing>.mdl-cell--7-col-tablet.mdl-cell--7-col-tablet{width:87.5%}.mdl-cell--8-col,.mdl-cell--8-col-tablet.mdl-cell--8-col-tablet{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--8-col,.mdl-grid--no-spacing>.mdl-cell--8-col-tablet.mdl-cell--8-col-tablet{width:100%}.mdl-cell--9-col,.mdl-cell--9-col-tablet.mdl-cell--9-col-tablet{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--9-col,.mdl-grid--no-spacing>.mdl-cell--9-col-tablet.mdl-cell--9-col-tablet{width:100%}.mdl-cell--10-col,.mdl-cell--10-col-tablet.mdl-cell--10-col-tablet{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--10-col,.mdl-grid--no-spacing>.mdl-cell--10-col-tablet.mdl-cell--10-col-tablet{width:100%}.mdl-cell--11-col,.mdl-cell--11-col-tablet.mdl-cell--11-col-tablet{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--11-col,.mdl-grid--no-spacing>.mdl-cell--11-col-tablet.mdl-cell--11-col-tablet{width:100%}.mdl-cell--12-col,.mdl-cell--12-col-tablet.mdl-cell--12-col-tablet{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--12-col,.mdl-grid--no-spacing>.mdl-cell--12-col-tablet.mdl-cell--12-col-tablet{width:100%}.mdl-cell--1-offset,.mdl-cell--1-offset-tablet.mdl-cell--1-offset-tablet{margin-left:calc(12.5% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset-tablet.mdl-cell--1-offset-tablet{margin-left:12.5%}.mdl-cell--2-offset,.mdl-cell--2-offset-tablet.mdl-cell--2-offset-tablet{margin-left:calc(25% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset-tablet.mdl-cell--2-offset-tablet{margin-left:25%}.mdl-cell--3-offset,.mdl-cell--3-offset-tablet.mdl-cell--3-offset-tablet{margin-left:calc(37.5% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset-tablet.mdl-cell--3-offset-tablet{margin-left:37.5%}.mdl-cell--4-offset,.mdl-cell--4-offset-tablet.mdl-cell--4-offset-tablet{margin-left:calc(50% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--4-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--4-offset-tablet.mdl-cell--4-offset-tablet{margin-left:50%}.mdl-cell--5-offset,.mdl-cell--5-offset-tablet.mdl-cell--5-offset-tablet{margin-left:calc(62.5% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--5-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--5-offset-tablet.mdl-cell--5-offset-tablet{margin-left:62.5%}.mdl-cell--6-offset,.mdl-cell--6-offset-tablet.mdl-cell--6-offset-tablet{margin-left:calc(75% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--6-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--6-offset-tablet.mdl-cell--6-offset-tablet{margin-left:75%}.mdl-cell--7-offset,.mdl-cell--7-offset-tablet.mdl-cell--7-offset-tablet{margin-left:calc(87.5% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--7-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--7-offset-tablet.mdl-cell--7-offset-tablet{margin-left:87.5%}}
-      @media (min-width:840px){.mdl-grid{padding:8px}.mdl-cell{margin:8px;width:calc(33.3333333333% - 16px)}.mdl-grid--no-spacing>.mdl-cell{width:33.3333333333%}.mdl-cell--hide-desktop{display:none}.mdl-cell--order-1-desktop.mdl-cell--order-1-desktop{-webkit-order:1;-ms-flex-order:1;order:1}.mdl-cell--order-2-desktop.mdl-cell--order-2-desktop{-webkit-order:2;-ms-flex-order:2;order:2}.mdl-cell--order-3-desktop.mdl-cell--order-3-desktop{-webkit-order:3;-ms-flex-order:3;order:3}.mdl-cell--order-4-desktop.mdl-cell--order-4-desktop{-webkit-order:4;-ms-flex-order:4;order:4}.mdl-cell--order-5-desktop.mdl-cell--order-5-desktop{-webkit-order:5;-ms-flex-order:5;order:5}.mdl-cell--order-6-desktop.mdl-cell--order-6-desktop{-webkit-order:6;-ms-flex-order:6;order:6}.mdl-cell--order-7-desktop.mdl-cell--order-7-desktop{-webkit-order:7;-ms-flex-order:7;order:7}.mdl-cell--order-8-desktop.mdl-cell--order-8-desktop{-webkit-order:8;-ms-flex-order:8;order:8}.mdl-cell--order-9-desktop.mdl-cell--order-9-desktop{-webkit-order:9;-ms-flex-order:9;order:9}.mdl-cell--order-10-desktop.mdl-cell--order-10-desktop{-webkit-order:10;-ms-flex-order:10;order:10}.mdl-cell--order-11-desktop.mdl-cell--order-11-desktop{-webkit-order:11;-ms-flex-order:11;order:11}.mdl-cell--order-12-desktop.mdl-cell--order-12-desktop{-webkit-order:12;-ms-flex-order:12;order:12}.mdl-cell--1-col,.mdl-cell--1-col-desktop.mdl-cell--1-col-desktop{width:calc(8.3333333333% - 16px)}.mdl-grid--no-spacing>.mdl-cell--1-col,.mdl-grid--no-spacing>.mdl-cell--1-col-desktop.mdl-cell--1-col-desktop{width:8.3333333333%}.mdl-cell--2-col,.mdl-cell--2-col-desktop.mdl-cell--2-col-desktop{width:calc(16.6666666667% - 16px)}.mdl-grid--no-spacing>.mdl-cell--2-col,.mdl-grid--no-spacing>.mdl-cell--2-col-desktop.mdl-cell--2-col-desktop{width:16.6666666667%}.mdl-cell--3-col,.mdl-cell--3-col-desktop.mdl-cell--3-col-desktop{width:calc(25% - 16px)}.mdl-grid--no-spacing>.mdl-cell--3-col,.mdl-grid--no-spacing>.mdl-cell--3-col-desktop.mdl-cell--3-col-desktop{width:25%}.mdl-cell--4-col,.mdl-cell--4-col-desktop.mdl-cell--4-col-desktop{width:calc(33.3333333333% - 16px)}.mdl-grid--no-spacing>.mdl-cell--4-col,.mdl-grid--no-spacing>.mdl-cell--4-col-desktop.mdl-cell--4-col-desktop{width:33.3333333333%}.mdl-cell--5-col,.mdl-cell--5-col-desktop.mdl-cell--5-col-desktop{width:calc(41.6666666667% - 16px)}.mdl-grid--no-spacing>.mdl-cell--5-col,.mdl-grid--no-spacing>.mdl-cell--5-col-desktop.mdl-cell--5-col-desktop{width:41.6666666667%}.mdl-cell--6-col,.mdl-cell--6-col-desktop.mdl-cell--6-col-desktop{width:calc(50% - 16px)}.mdl-grid--no-spacing>.mdl-cell--6-col,.mdl-grid--no-spacing>.mdl-cell--6-col-desktop.mdl-cell--6-col-desktop{width:50%}.mdl-cell--7-col,.mdl-cell--7-col-desktop.mdl-cell--7-col-desktop{width:calc(58.3333333333% - 16px)}.mdl-grid--no-spacing>.mdl-cell--7-col,.mdl-grid--no-spacing>.mdl-cell--7-col-desktop.mdl-cell--7-col-desktop{width:58.3333333333%}.mdl-cell--8-col,.mdl-cell--8-col-desktop.mdl-cell--8-col-desktop{width:calc(66.6666666667% - 16px)}.mdl-grid--no-spacing>.mdl-cell--8-col,.mdl-grid--no-spacing>.mdl-cell--8-col-desktop.mdl-cell--8-col-desktop{width:66.6666666667%}.mdl-cell--9-col,.mdl-cell--9-col-desktop.mdl-cell--9-col-desktop{width:calc(75% - 16px)}.mdl-grid--no-spacing>.mdl-cell--9-col,.mdl-grid--no-spacing>.mdl-cell--9-col-desktop.mdl-cell--9-col-desktop{width:75%}.mdl-cell--10-col,.mdl-cell--10-col-desktop.mdl-cell--10-col-desktop{width:calc(83.3333333333% - 16px)}.mdl-grid--no-spacing>.mdl-cell--10-col,.mdl-grid--no-spacing>.mdl-cell--10-col-desktop.mdl-cell--10-col-desktop{width:83.3333333333%}.mdl-cell--11-col,.mdl-cell--11-col-desktop.mdl-cell--11-col-desktop{width:calc(91.6666666667% - 16px)}.mdl-grid--no-spacing>.mdl-cell--11-col,.mdl-grid--no-spacing>.mdl-cell--11-col-desktop.mdl-cell--11-col-desktop{width:91.6666666667%}.mdl-cell--12-col,.mdl-cell--12-col-desktop.mdl-cell--12-col-desktop{width:calc(100% - 16px)}.mdl-grid--no-spacing>.mdl-cell--12-col,.mdl-grid--no-spacing>.mdl-cell--12-col-desktop.mdl-cell--12-col-desktop{width:100%}.mdl-cell--1-offset,.mdl-cell--1-offset-desktop.mdl-cell--1-offset-desktop{margin-left:calc(8.3333333333% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--1-offset-desktop.mdl-cell--1-offset-desktop{margin-left:8.3333333333%}.mdl-cell--2-offset,.mdl-cell--2-offset-desktop.mdl-cell--2-offset-desktop{margin-left:calc(16.6666666667% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--2-offset-desktop.mdl-cell--2-offset-desktop{margin-left:16.6666666667%}.mdl-cell--3-offset,.mdl-cell--3-offset-desktop.mdl-cell--3-offset-desktop{margin-left:calc(25% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--3-offset-desktop.mdl-cell--3-offset-desktop{margin-left:25%}.mdl-cell--4-offset,.mdl-cell--4-offset-desktop.mdl-cell--4-offset-desktop{margin-left:calc(33.3333333333% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--4-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--4-offset-desktop.mdl-cell--4-offset-desktop{margin-left:33.3333333333%}.mdl-cell--5-offset,.mdl-cell--5-offset-desktop.mdl-cell--5-offset-desktop{margin-left:calc(41.6666666667% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--5-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--5-offset-desktop.mdl-cell--5-offset-desktop{margin-left:41.6666666667%}.mdl-cell--6-offset,.mdl-cell--6-offset-desktop.mdl-cell--6-offset-desktop{margin-left:calc(50% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--6-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--6-offset-desktop.mdl-cell--6-offset-desktop{margin-left:50%}.mdl-cell--7-offset,.mdl-cell--7-offset-desktop.mdl-cell--7-offset-desktop{margin-left:calc(58.3333333333% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--7-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--7-offset-desktop.mdl-cell--7-offset-desktop{margin-left:58.3333333333%}.mdl-cell--8-offset,.mdl-cell--8-offset-desktop.mdl-cell--8-offset-desktop{margin-left:calc(66.6666666667% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--8-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--8-offset-desktop.mdl-cell--8-offset-desktop{margin-left:66.6666666667%}.mdl-cell--9-offset,.mdl-cell--9-offset-desktop.mdl-cell--9-offset-desktop{margin-left:calc(75% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--9-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--9-offset-desktop.mdl-cell--9-offset-desktop{margin-left:75%}.mdl-cell--10-offset,.mdl-cell--10-offset-desktop.mdl-cell--10-offset-desktop{margin-left:calc(83.3333333333% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--10-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--10-offset-desktop.mdl-cell--10-offset-desktop{margin-left:83.3333333333%}.mdl-cell--11-offset,.mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop{margin-left:calc(91.6666666667% + 8px)}.mdl-grid.mdl-grid--no-spacing>.mdl-cell--11-offset,.mdl-grid.mdl-grid--no-spacing>.mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop{margin-left:91.6666666667%}}
-
-      .mdl-mini-footer{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:32px 16px;color:#9e9e9e;background-color:#424242}
-      .mdl-mini-footer:after{content:'';display:block}
-      .mdl-mini-footer--link-list,.mdl-mini-footer__link-list{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;list-style:none;margin:0;padding:0}
-      .mdl-mini-footer--link-list li,.mdl-mini-footer__link-list li{margin-bottom:0;margin-right:16px}
-      @media screen and (min-width:760px){.mdl-mini-footer--link-list li,.mdl-mini-footer__link-list li{line-height:36px}}
-      .mdl-mini-footer--link-list a,.mdl-mini-footer__link-list a{color:inherit;text-decoration:none;white-space:nowrap}
-      .mdl-mini-footer--left-section,.mdl-mini-footer__left-section{display:inline-block;-webkit-order:0;-ms-flex-order:0;order:0}
-      .mdl-mini-footer--right-section,.mdl-mini-footer__right-section{display:inline-block;-webkit-order:1;-ms-flex-order:1;order:1}
-      .mdl-mini-footer__right-section address,.mdl-mini-footer__right-section address{line-height:15px}
-      .mdl-mini-footer__right-section address a,.mdl-mini-footer__right-section address a{color:inherit;font:inherit}
-      .mdl-mini-footer--link-list li,.mdl-mini-footer__link-list li a:hover{color:#fff}
-
-      /* Site-wide overrides */
-      .mdl-layout__drawer{box-shadow:0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2)}
-      .mdl-layout__drawer .material-icons{margin-right:12px}
-      .mdl-layout__drawer .mdl-navigation .mdl-navigation__link .material-icons{color:#7b7b7b}
-      @media screen and (max-width:850px){
-        .mdl-layout__header-row .mdl-layout-title{display:block;left:0;margin:0 auto;position:absolute;right:0;text-align:center;white-space:nowrap}
-        .mdl-layout__header-row .mdl-navigation{display:none}
-      }
-      article,.mdl-layout__content{margin:0 auto;padding:0;width:100%}
-      .mdl-layout__content p{color:#212121;font-size:18px;font-weight:400;line-height:26px;max-width:45em}
-      .mdl-layout__content p dfn,.mdl-layout__content p em{font-style:normal;font-weight:700}
-      .mdl-grid{max-width:1300px}
-
-      /* Site-wide logo */
-      .mdl-layout-title{color:#03a9f4;font-size:45px;font-weight:300;letter-spacing:-.03em}
-      .mdl-layout-title a{display:inline-block;font-weight:inherit;padding:1ex 0 0 0;text-decoration:none}
-      .mdl-layout-title amp-img{vertical-align:middle}
-      .mdl-layout-title strong{color:#8bc34a;font-weight:900}
-      @media screen and (max-width:400px){.mdl-layout-title{font-size:38px}}
-
-      /* Site-wide footer */
-      div#sc-footer{background:url('/images/background-mcommerce-coffee.jpg') bottom center / cover local #000;padding:2em 0;text-align:center;width:100%}
-      #sc-footer div{padding:1em 1ex}
-      #sc-footer p{color:#fff;font:300 24px/25px Roboto,sans-serif;padding:1em 0 0 0}
-      #sc-footer a{color:inherit;font:inherit}
-      #sc-footer a:hover{text-decoration:none}
-
-      /* Overrides for this page */
-      .sc-hero-layout-transparent{background-attachment:scroll;background-color:#fff;background-image:url('/images/background-mobile-hero.jpg');background-position:top right;background-repeat:no-repeat;background-size:100%}
-      .sc-hero-layout-transparent .mdl-layout__drawer-button,.sc-hero-layout-transparent .mdl-navigation__link{color:#fff}
-      h1{color:#fff;font:300 56px/1em Roboto,sans-serif;letter-spacing:-.04em;margin:1em 1ex 1em 48px}
-      h2{font-variant-ligatures:discretionary-ligatures;margin:0}
-
-      article header{clear:both;display:block;height:95%}
-      article header div{padding:50px 0 150px 0}
-      header .mdl-button + .mdl-button{margin-left:1em}
-      @media screen and (max-width:412px){
-        .sc-hero-layout-transparent{background-size:200%}
-      }
-
-      section{background:#fff;margin:0 auto;max-width:1300px;padding:20px}
-
-      aside{background-color:#000;color:#fff}
-      aside .mdl-grid {padding:76px 0}
-      aside .mdl-grid h2{color:#fff;font:700 48px/1.1em Roboto,sans-serif;margin:0 0 24px 0}
-      aside .mdl-grid p{color:#fff}
-
-      @media screen and (min-width:825px){
-        main article header{display:block;margin-left:80px;vertical-align:middle;height:400px}
-        header .mdl-button{min-width:200px;padding:5px}
-        h1{font-size:85px;margin:85px 1ex 0 0}
-        h2{color:#414141;font-size:35px}
-      }
-      @media screen and (min-width:910px){
-        h1{font-size:112px;margin:114px 1ex 0 0}
-        h2{font-size:47px;line-height:120px}
-      }
-    </style>
-
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-  </head>
-  <body>
-    <amp-sidebar class="mdl-layout__drawer" id="sidebar" layout="nodisplay">
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/"><i class="material-icons" role="presentation">&#xE88A;</i> Home</a>
-        <a class="mdl-navigation__link" href="/plans-and-pricing/"><i class="material-icons" role="presentation">&#xE0AF;</i> Plans and pricing</a>
-        <a class="mdl-navigation__link" href="/sign-up/"><i class="material-icons" role="presentation">&#xE7FE;</i> Beta sign-up</a>
-        <a class="mdl-navigation__link" href="/docs/"><i class="material-icons" role="presentation">school</i> Resources</a>
-        <a class="mdl-navigation__link" href="/contact/"><i class="material-icons" role="presentation">&#xE0BE;</i> Contact</a>
-        <a class="mdl-navigation__link" href="/thanks/"><i class="material-icons" role="presentation">people</i> Thanks</a>
-      </nav>
-    </amp-sidebar>
-    <div class="mdl-layout sc-hero-layout-transparent">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">
-            <a href="http://storecore.io/">
-              <amp-img alt="StoreCore" height="64" layout="fixed" src="/images/StoreCore-icon-64x64.png" width="64"></amp-img> <strong>Store</strong>Core</span>
-            </a>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="/">Home</a>
-            <a class="mdl-navigation__link" href="/plans-and-pricing/">Plans and pricing</a>
-            <a class="mdl-navigation__link" href="/sign-up/">Beta sign-up</a>
-            <a class="mdl-navigation__link" href="/docs/">Resources</a>
-            <a class="mdl-navigation__link" href="/contact/">Contact</a>
-          </nav>
-        </div>
-      </header>
-      <div aria-expanded="false" class="mdl-layout__drawer-button" on="tap:sidebar.open" role="button" tabindex="0">
-        <i class="material-icons">&#xE5D2;</i>
-      </div>
-
-      <main class="mdl-layout__content">
-        <article>
-          <header>
-            <h1>E-commerce <br>in the palm of your hand</h1>
-            <div>
-              <a class="mdl-button mdl-button--raised mdl-button--colored" href="/sign-up/">Get started</a>
-              <a class="mdl-button mdl-button--raised mdl-button--accent" href="#introduction">Learn more</a>
-            </div>
-          </header>
-
-          <section id="introduction">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <h2>Introducing StoreCore</h2>
-                <p>
-                  Tired of all those software updates or a slow webshop?  Keep on reading! We introduce to you: StoreCore, the first open source e-commerce platform built by and for you. We are building not only one of the fastest e-commerce platform that there is today (loads in just half a second), but we also put mobile first. Yes, from now on you can run your online store from the palm of your hand. We at StoreCore are therefore proud to present to you a dedicated e-commerce platform that grows with you. And hopefully grows on you.
-                </p>
-                <p>
-                  <a href="#feature-highlights">Feature highlights &gt;</a>
-                </p>
-              </div>
-              <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--hide-phone">
-                <amp-img alt="" height="300" layout="responsive" src="/images/image-01-300x300.jpg" width="300"></amp-img>
-              </div>
-              <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--hide-phone">
-                <amp-img alt="" height="300" layout="responsive" src="/images/image-02-300x300.jpg" width="300"></amp-img>
-              </div>
-            </div>
-          </section>
-
-          <aside>
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                <h2>Signing up for beta tests</h2>
-                <p>
-                  We send out a limited number of invitations, based on several
-                  criteria.  Customer service cannot assist with beta access,
-                  but if you’re interested, you’ll want to sign up here.
-                  If you are selected to participate in a beta test, you’ll
-                  receive an e-mail with information on how to install
-                  StoreCore and provide feedback.
-                </p>
-                <div>
-                  <a class="mdl-button mdl-button--raised mdl-button--accent" href="/sign-up/">
-                    <i class="material-icons" role="presentation">&#xE7FE;</i> Sign up today
-                  </a>
-                </div>
-              </div>
-            </div>
-          </aside>
-
-
-          <section id="feature-highlights">
-            <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-
-              </div>
-            </div>
-          </section>
-        </article>
-
-      </main>
-
-      <div id="sc-footer">
-        <div>
-          <span class="mdl-layout-title">
-            <a href="http://storecore.io/" title="StoreCore">
-              <amp-img alt="StoreCore" height="64" src="/images/StoreCore-icon-64x64.png" width="64"></amp-img> <strong>Store</strong>Core</span>
-            </a>
-          </span>
-          <p><a href="/" title="StoreCore">E-commerce in the palm of your hand</a></p>
-        </div>
-        <div>
-          <a href="https://github.com/storecore/core/" target="_blank" rel="noopener" title="GitHub">
-            <amp-img alt="GitHub" height="48" layout="fixed" src="/images/github-box-white-48x48.png" width="48"></amp-img>
-          </a>
-          <a href="https://twitter.com/storecorehq" target="_blank" rel="noopener" title="Twitter">
-            <amp-img alt="Twitter" height="48" layout="fixed" src="/images/twitter-box-white-48x48.png" width="48"></amp-img>
-          </a>
-          <a href="https://www.facebook.com/StoreCoreHQ/" target="_blank" rel="noopener" title="Facebook">
-            <amp-img alt="Facebook" height="48" layout="fixed" src="/images/facebook-box-white-48x48.png" width="48"></amp-img>
-          </a>
-          <a href="https://www.linkedin.com/company/StoreCoreHQ" target="_blank" rel="noopener" title="LinkedIn">
-            <amp-img alt="LinkedIn" height="48" layout="fixed" src="/images/linkedin-box-white-48x48.png" width="48"></amp-img>
-          </a>
-        </div>
-      </div>
-      <footer class="mdl-mini-footer">
-        <div class="mdl-mini-footer__left-section">
-          <ul class="mdl-mini-footer__link-list">
-            <li>Copyright ©&nbsp;2017 <a href="http://storecore.io/" title="StoreCore">StoreCore</a>™</li>
-            <li><a href="/docs/">Help</a></li>
-            <li><a href="/privacy/">Privacy</a></li>
-            <li><a href="/license/">License</a></li>
-          </ul>
-        </div>
-        <div class="mdl-mini-footer__right-section">
-          <address>
-            <a href="/contact/">
-              StoreCore · Wildeman&nbsp;62 · 5629&nbsp;KH&nbsp;Eindhoven · The&nbsp;Netherlands
-              <br>Chamber&nbsp;of&nbsp;Commerce&nbsp;23083293 · VAT&nbsp;number&nbsp;NL&nbsp;141226377B01
-            </a>
-          </address>
-        </div>
-      </footer>
-
-    </div>
-  </body>
-
-  <amp-analytics type="googleanalytics" id="analyticsPageview">
-  <script type="application/json">
-  {
-    "vars": {
-      "account": "UA-80202349-1"
-    },
-    "triggers": {
-      "trackPageview": {
-        "on": "visible",
-        "request": "pageview"
-      }
-    }
-  }
+    var deadline = '2017-03-28T12:00:00Z';
+    initializeClock('clockdiv', deadline);
   </script>
-  </amp-analytics>
+
 </html>
