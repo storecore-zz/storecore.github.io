@@ -257,11 +257,14 @@
       article header{clear:both;display:block;height:95%}
       article header div{padding:50px 0 150px 0}
       header .mdl-button + .mdl-button{margin-left:1em}
+      .mdl-button--raised.mdl-button--colored,.mdl-button--accent.mdl-button--accent.mdl-button--raised{color:#fff}
       @media screen and (max-width:412px){
         .sc-hero-layout-transparent{background-size:200%}
       }
 
-      section{background:#fff;margin:0 auto;max-width:1300px;padding:20px}
+      section{background:#fff;border-radius:10px;margin:0 auto;max-width:1300px;padding:20px}
+      
+      section#introduction{padding:56px 0}
       section#introduction h2{font:300 56px/60px Roboto,sans-serif;letter-spacing:-.02em;margin-bottom:24px}
 
       aside{background-attachment:fixed;background-color:#000;background-image:url('/images/background-mcommerce-code.jpg');background-position:center;background-size:100%;color:#fff}
@@ -269,14 +272,34 @@
       aside .mdl-grid h2{color:#fff;font:700 48px/1.1em Roboto,sans-serif;margin:0 0 24px 0}
       aside .mdl-grid p{color:#fff}
 
+      section#feature-highlights .mdl-grid{margin:0 auto;max-width:100%;width:1300px}
+      section#feature-highlights h2{font:500 20px/25px Roboto,sans-serif;text-align:center;margin-bottom:12px}
+      section#feature-highlights p{font:400 17px/25px Roboto,sans-serif;text-align:center}
+      section#feature-highlights .material-icons{clear:both;display:block;font-size:48px;margin-bottom:4px}
+      .mdl-color-text--blue{color:#2196f3}
+      .mdl-color-text--brown{color:#795548}
+      .mdl-color-text--deep-purple{color:#673ab7}
+      .mdl-color-text--green{color:#4caf50}
+      .mdl-color-text--grey{color:#9e9e9e}
+      .mdl-color-text--indigo{color:#3f51b5}
+      .mdl-color-text--light-green{color:#8bc34a}
+      .mdl-color-text--purple{color:#9c27b0}
+      .mdl-color-text--red{color:#f44336}
+      .mdl-color-text--teal{color:#009688}
+
       @media screen and (min-width:825px){
         main article header{display:block;margin-left:80px;vertical-align:middle;height:400px}
         header .mdl-button{min-width:200px;padding:5px}
         h1{font-size:85px;margin:85px 1ex 0 0}
-        
       }
+
       @media screen and (min-width:910px){
+        article header{margin-bottom:200px}
         h1{font-size:112px;margin:114px 1ex 0 0}
+      }
+
+      @media screen and (max-width:850px){
+        article header div{text-align:center}
       }
     </style>
 
@@ -330,10 +353,20 @@
               <div class="mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
                 <h2>Introducing StoreCore</h2>
                 <p>
-                  Tired of all those software updates or a slow webshop?  Keep on reading! We introduce to you: StoreCore, the first open source e-commerce platform built by and for you.  We are building not only one of <a href="#high-performance">the fastest</a> e-commerce platform that there is today (loads in just half a second), but we also put <a href="#mobile-first">mobile first</a>. Yes, from now on you can run your online store from the palm of your hand. We at StoreCore are therefore proud to present to you a dedicated e-commerce platform that grows with you. And hopefully grows on you.
+                  Tired of all those software updates or a slow webshop?
+                  Keep on reading!  We introduce to you: StoreCore, the first
+                  <em>open-source e-commerce platform</em> built by, with, and
+                  for you.  We are building not only one of
+                  <a href="#high-performance">the fastest</a> e-commerce
+                  platform that there is today (loads in just half a second),
+                  but we also put <a href="#mobile-first">mobile first</a>.
+                  Yes, from now on you can run your online store from the palm
+                  of your hand.  We at StoreCore are therefore proud to present
+                  to you a dedicated e-commerce platform that grows with you.
+                  And hopefully grows on you.
                 </p>
                 <p>
-                  <a href="#feature-highlights">Feature highlights &gt;</a>
+                  <a href="#feature-highlights" title="Feature hightlights">Feature highlights &gt;</a>
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--1-col-tablet mdl-cell--hide-phone">
@@ -366,11 +399,10 @@
             </div>
           </aside>
 
-
           <section id="feature-highlights">
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2 id="mobile-first">Mobile first</h2>
+                <h2 id="mobile-first"><i class="material-icons mdl-color-text--purple" role="presentation">smartphone</i> Mobile first</h2>
                 <p>
                   Why not start with mobile?  Everyone is using their phones
                   today for almost everything.  Now you can use your phone to
@@ -378,30 +410,30 @@
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2 id="high-performance">High performance</h2>
+                <h2 id="high-performance"><i class="material-icons mdl-color-text--red" role="presentation">whatshot</i> High performance</h2>
                 <p>
                   We are doing everything to set our goals and standards high.
                   Performance is one of the main goals: your StoreCore web shop
                   will be among the fastest sites in your business.  StoreCore
-                  has a native full-page cache and supports Google 
+                  has a native full-page cache and supports Google
                   <abbr title="Accelerated Mobile Pages">AMP</abbr> (Accelerated
                   Mobile Pages).
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Security by design</h2>
+                <h2><i class="material-icons mdl-color-text--blue" role="presentation">security</i> Security by design</h2>
                 <p>
-                  StoreCore is built with security in mind.  StoreCore is 
+                  StoreCore is built with security in mind.  StoreCore is
                   <abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr> compliant
                   and includes security features like whitelists, blacklists,
                   and military-grade password encryption.  To emphasize our
-                  dedication to security, all 
-                  <a href="/plans-and-pricing/" title="StoreCore plans and pricing">StoreCore hosting plans</a> 
+                  dedication to security, all
+                  <a href="/plans-and-pricing/" title="StoreCore plans and pricing">StoreCore hosting plans</a>
                   include a free <abbr title="Secure Sockets Layer">SSL</abbr> certificate.
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Dedicated commerce</h2>
+                <h2><i class="material-icons mdl-color-text--green" role="presentation">shopping_cart</i> Dedicated commerce</h2>
                 <p>
                   StoreCore is no some overgrown blog tool or yet another
                   <abbr title="content management system">CMS</abbr>.  It’s a
@@ -410,25 +442,25 @@
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Multi-store support</h2>
+                <h2><i class="material-icons mdl-color-text--indigo" role="presentation">business</i> Multi-store support</h2>
                 <p>
-                  StoreCore allows you to run up to 255 different web shops. 
-                  StoreCore supports all world currencies, international 
+                  StoreCore allows you to run up to 255 different web shops.
+                  StoreCore supports all world currencies, international
                   shipping, and multiple languages.  Currently English, French,
                   German, and Dutch are supported.
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Evergreen</h2>
+                <h2><i class="material-icons mdl-color-text--light-green" role="presentation">local_florist</i> Evergreen</h2>
                 <p>
-                  Just like modern web browsers, StoreCore is an 
+                  Just like modern web browsers, StoreCore is an
                   <dfn>evergreen</dfn> software framework: security patches and
                   other software updates are downloaded and installed
                   automatically.
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Scalable</h2>
+                <h2><i class="material-icons mdl-color-text--grey" role="presentation">build</i> Scalable</h2>
                 <p>
                   StoreCore is designed as a framework for building web shops
                   and online storefronts as well as e-commerce and retail
@@ -436,7 +468,7 @@
                 </p>
               </div>
               <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-                <h2>Freedom</h2>
+                <h2><i class="material-icons mdl-color-text--brown" role="presentation">free_breakfast</i> Freedom</h2>
                 <p>
                   No more vendor lock-ins!  StoreCore is <dfn>free and open-source software</dfn>
                   (<abbr title="free and open-source software">FOSS</abbr>),
@@ -449,7 +481,6 @@
             </div>
           </section>
         </article>
-
       </main>
 
       <div id="sc-footer">
