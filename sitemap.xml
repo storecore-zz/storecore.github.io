@@ -13,6 +13,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>http://storecore.io/license/</loc>
+    <lastmod>2017-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>http://storecore.io/plans-and-pricing/</loc>
     <lastmod>2017-04-21</lastmod>
     <changefreq>monthly</changefreq>
