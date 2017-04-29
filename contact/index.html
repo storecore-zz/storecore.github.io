@@ -31,7 +31,7 @@
       "description": "StoreCore address and contact information",
       "copyrightYear": 2017,
       "datePublished": "2017-04-26T02:39:52Z",
-      "dateModified": "2017-04-29T09:20:12Z",
+      "dateModified": "2017-04-29T10:32:37Z",
       "author": {
         "@type": "Organization",
         "name": "StoreCore",
@@ -283,8 +283,11 @@
         .mdl-grid{margin-bottom:48px}
       }
       
+      .mdl-grid .mdl-card{max-width:100%}
       .mdl-grid .mdl-card__actions{text-align:right}
-      .mdl-card__actions .material-icons{vertical-align:middle}
+      .mdl-card__actions a{display:inline;vertical-align:middle}
+      .mdl-card__actions a + a{margin-left:1ex}
+      .mdl-card__actions .material-icons{display:inline;vertical-align:middle}
     </style>
 
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -331,11 +334,9 @@
               <a href="mailto:support@storecore.org">support@storecore.org</a>
             </h1>
           </header>
-
           <section>
             <div class="mdl-grid">
               <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-              
                 <div class="mdl-card mdl-shadow--4dp">
                   <div class="mdl-card__title mdl-card--border">
                     <h2 class="mdl-card__title-text">Find us at the office</h2>
@@ -347,37 +348,28 @@
                     The Netherlands
                   </div>
                   <div class="mdl-card__actions mdl-card--border">
-                    <a href="https://www.google.nl/maps/place/StoreCore/@51.4766071,5.4625477,13.39z/data=!4m18!1m12!4m11!1m3!2m2!1d5.4835238!2d51.4906495!1m6!1m2!1s0x47c6dedd0e5ace01:0xcc3bfde9b0d72b9!2sstorecore+eindhoven!2m2!1d5.4835632!2d51.49048!3m4!1s0x47c6dedd0e5ace01:0xcc3bfde9b0d72b9!8m2!3d51.49048!4d5.4835632">
-                      <i class="material-icons">&#xE55F;</i> Google Maps
-                    </a>
+                    <a href="https://www.google.nl/maps/place/StoreCore/@51.4766071,5.4625477,13.39z/data=!4m18!1m12!4m11!1m3!2m2!1d5.4835238!2d51.4906495!1m6!1m2!1s0x47c6dedd0e5ace01:0xcc3bfde9b0d72b9!2sstorecore+eindhoven!2m2!1d5.4835632!2d51.49048!3m4!1s0x47c6dedd0e5ace01:0xcc3bfde9b0d72b9!8m2!3d51.49048!4d5.4835632"><i class="material-icons">&#xE55F;</i> Google Maps</a>
                   </div>
                 </div>
-
               </div>
               <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-              
                 <div class="mdl-card mdl-shadow--4dp">
                   <div class="mdl-card__title mdl-card--border">
                     <h2 class="mdl-card__title-text">Give us a call</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
                     StoreCore Contact Centre<br>
-                    +31 40 248 23 11<br>
-                    Mon-Fri, 07:00-20:00 <abbr title="Central European Time">CET</abbr>
+                    Telephone number +31 40 248 23 11<br>
+                    Mon-Fri, 07:00-20:00 <abbr title="Central European Time">CET</abbr><br>
+                    English, German, and Dutch
                   </div>
                   <div class="mdl-card__actions mdl-card--border">
-                    <a href="tel:+31402482311">
-                      <i class="material-icons">&#xE551;</i> Call us
-                    </a>
-                    <a href="mailto:support@storecore.org">
-                      <i class="material-icons">&#xE0BE;</i> Email us
-                    </a>
+                    <a href="tel:+31402482311"><i class="material-icons">&#xE551;</i> Call us</a>
+                    <a href="mailto:support@storecore.org"><i class="material-icons">&#xE0BE;</i> Email us</a>
                   </div>
                 </div>
-
               </div>
               <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-
                 <div class="mdl-card mdl-shadow--4dp">
                   <div class="mdl-card__title mdl-card--border">
                     <h2 class="mdl-card__title-text">Legal information</h2>
