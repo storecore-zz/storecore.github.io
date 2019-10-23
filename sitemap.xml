@@ -47,8 +47,4 @@
     <loc>https://www.storecore.io/amp-for-ecommerce</loc>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://www.storecore.io/google-i-o</loc>
-    <priority>0.1</priority>
-  </url>
 </urlset>
