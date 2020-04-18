@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:4.0
+N:van der Put;Ward
+FN:Ward van der Put
+ORG:StoreCore
+TITLE:CEO
+LOGO:https://www.storecore.io/images/StoreCore-icon-196x196.png
+TEL;TYPE=work,voice;VALUE=uri:tel:+31-40-248-2311
+TEL;TYPE=home,voice;VALUE=uri:tel:+31-40-256-5735
+ADR;TYPE=WORK;PREF=1;LABEL="Wildeman 62\n5629 KH Eindhoven\nThe Netherlands":;;Wildeman 62;Eindhoven;;5629 KH;The Netherlands
+EMAIL:info@storecore.org
+REV:20200414T070402Z
+END:VCARD

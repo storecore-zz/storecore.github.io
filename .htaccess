@@ -1,0 +1,44 @@
+# Short links
+Redirect 301 /help    https://storecore.freshdesk.com/support/home
+Redirect 301 /kb      https://www.storecore.io/knowledge-base/
+Redirect 301 /qsg     https://www.storecore.io/knowledge-base/user-guides/installation-quickstart-guide
+Redirect 301 /ticket  https://storecore.freshdesk.com/support/tickets/new
+
+# Other redirects
+Redirect 301 /google-i-o https://events.google.com/io/
+Redirect 301 /index https://www.storecore.io/
+Redirect 301 /pricing https://www.storecore.io/plans-and-pricing
+Redirect 301 /privacy https://www.storecore.io/privacy-policy
+Redirect 301 /privacy/ https://www.storecore.io/privacy-policy
+Redirect 301 /thanks/ http://localhost/thanks
+
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} !www\.storecore\.io [NC]
+#RewriteRule ^(.*)$ https://www.storecore.io/$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Expires caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType image/gif "access 1 month"
+  ExpiresByType image/jpeg "access 1 month"
+  ExpiresByType image/jpg "access 1 month"
+  ExpiresByType image/png "access 1 month"
+  ExpiresByType image/webp "access 1 month"
+  ExpiresByType image/x-icon "access 1 month"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresDefault "access 1 month"
+</IfModule>
+
+# Cache most static assets publicly for 1 month
+<filesMatch ".(css|gif|ico|jpeg|jpg|js|png|webp)$">
+  Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
