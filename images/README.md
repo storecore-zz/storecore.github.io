@@ -13,6 +13,7 @@ file name to indicate the image width and height.
 | Full HD (FHD)   |  1920 |   1080 | `-1920x1080` |
 | Wide XGA (WXGA) |  1366 |    768 | `-1366x768`  |
 | RDF metadata    |  1200 |    675 | `-1200x675`  |
+| Cards           |  1056 |    594 | (none)       |
 
 If the file size of a photo is to large at 4K (3840 by 2160 pixels), it MAY be
 scaled down to 2K (2048 by 1080 pixels).
