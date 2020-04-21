@@ -44,7 +44,7 @@
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
         <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#2196f3">security</i> Security by design</h3>
-        <p>StoreCore is built with security in mind.  Store&shy;Core is <abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr> compliant and includes security features like whitelists, blacklists, and military-grade password encryption.  To emphasize our dedication to security, all <a href="/plans-and-pricing" title="StoreCore plans and pricing">StoreCore hosting plans</a> include a free <abbr title="Secure Sockets Layer">SSL</abbr> certificate.</p>
+        <p>StoreCore is built with security in mind.  Store&shy;Core is <abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr> compliant and includes security features like whitelists, blacklists, and military-grade password encryption.  To emphasize our dedication to security, all <a href="./plans-and-pricing?utm_source=storecore.io&amp;utm_medium=homepage&amp;utm_content=StoreCore%20hosting%20plans" title="StoreCore plans and pricing">StoreCore hosting plans</a> include a free <abbr title="Secure Sockets Layer">SSL</abbr> certificate.</p>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
         <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#8bc34a">shopping_cart</i> Dedicated to commerce</h3>
@@ -60,7 +60,7 @@
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
         <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#ff5722">widgets</i> Scalable</h3>
-        <p>StoreCore is designed as a framework for building webshops and online storefronts as well as e‑commerce and retail applications.</p>
+        <p>StoreCore is designed as a framework for building webshops and online storefronts as well as e‑commerce and retail ap&shy;pli&shy;ca&shy;tions.  StoreCore has a <abbr title="representational state transfer">REST</abbr> <abbr title="application programming interface">API</abbr> and can be used for headless commerce.</p>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
         <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#795548">free_breakfast</i> Freedom</h3>
@@ -68,5 +68,6 @@
       </div>
     </div>
   </div>
+  <p style="font-size:18px;padding:16px;text-align:center"><a href="https://eepurl.com/c5sgFb" rel="nofollow">Get the free StoreCore e-commerce newsletter…</a></p>
 </section>
 <?php require 'includes/footer.inc.php';
