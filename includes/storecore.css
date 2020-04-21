@@ -37,7 +37,16 @@ main {
 }
 
 a {
-  color: #0288d1;
+  color: #0288d1; /* Material Design Light Blue 700 */
+}
+
+a:hover {
+  color: #03a9f4; /* Material Design Light Blue 500 */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7b1fa2; /* Material Design Purple 700 */
 }
 
 address,
@@ -1105,8 +1114,9 @@ footer ul li {
   }
 }
 
-footer ul a {
-  color: inherit;
+footer ul a,
+footer ul a:visited {
+  color: #bdbdbd;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1157,9 +1167,7 @@ footer ul a {
 /**
  * Colors
  */
-.amd-background-color--ral-9010 { background-color: #f7f9ef }
-.amd-background-color--ral-9016 { background-color: #f7fbf5 }
-.amd-color--ral-9017 { color: #2a2d2f }
+.amd-background-color--white { background-color: #fff }
 
 .amd-color--amber-500 { color: #ffc107 }
 .amd-color--blue-500 { color: #2196f3 }
@@ -1176,10 +1184,12 @@ footer ul a {
 .amd-color--light-blue-a700 { color: #0091ea }
 .amd-color--light-green-500 { color: #8bc34a }
 .amd-color--light-green-700 { color: #689f38 }
+.amd-color--light-green-a700 { color: #64dd17 }
 .amd-color--lime-500 { color: #cddc39 }
 .amd-color--orange-500 { color: #ff9800 }
 .amd-color--pink-500 { color: #e91e63 }
 .amd-color--purple-500 { color: #9c27b0 }
+.amd-color--purple-700 { color: #7b1fa2 }
 .amd-color--red-500 { color: #f44336 }
 .amd-color--red-700 { color: #d32f2f }
 .amd-color--teal-500 { color: #009688 }

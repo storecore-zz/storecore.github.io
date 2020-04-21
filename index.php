@@ -1,12 +1,12 @@
 <?php require 'includes/header.inc.php' ?>
 <section class="amd-hero-image amd-hero-image--android-smartphone-on-black-background">
-  <div amp-fx="parallax" data-parallax-factor="1.3" class="mdc-layout-grid">
+  <div amp-fx="parallax" data-parallax-factor="1.5" class="mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop" style="background-image:linear-gradient(to bottom, rgba(0,0,0,.54), rgba(0,0,0,.95));border-radius:10px;padding:8px">
         <h1><strong>Store</strong>Core</h1>
         <h2 class="mdc-typography--headline5">E-commerce in&nbsp;the&nbsp;palm of&nbsp;your&nbsp;hand</h2>
-        <p style="font-size:18px">Tired of broken software updates or a slow webshop?  Keep on reading!  We introduce to you <dfn>StoreCore</dfn>: the first open-source, fully mobile e&#8209;commerce platform built by and for online retailers.  We are building not only an <a href="#high-performance">extremely fast</a> e&#8209;commerce platform (loads pages in less than a second), but we also put <a href="#mobile-first">mobile first</a> &mdash;&nbsp;everywhere and anywhere.  Yes, from now on you can simply run your online store from the palm of your hand.</p>
-        <p style="font-size:18px"><a class="amd-color--light-blue-a700" href="#feature-highlights" style="text-decoration:none" title="Feature highlights"><i aria-hidden="true" class="material-icons" style="display:inline-flex;padding:0 0 2px 0;vertical-align:middle">arrow_forward</i> Feature highlights</a></p>
+        <p style="font-size:18px">Tired of broken software updates or a slow webshop?  Keep on reading!  We introduce to you <dfn>StoreCore</dfn>: the first open-source, fully mobile e&#8209;commerce platform built by and for online retailers.  We are building not only an <a class="amd-color--light-green-a700" href="#high-performance" title="High performance">extremely fast</a> e&#8209;commerce platform (loads pages in less than a second), but we also put <a class="amd-color--light-green-a700" href="#mobile-first" title="Mobile first">mobile first</a> &mdash;&nbsp;everywhere and anywhere.  Yes, from now on you can simply run your online store from the palm of your hand.</p>
+        <p style="font-size:18px"><a class="amd-color--light-green-a700" href="#feature-highlights" style="text-decoration:none" title="Key feature highlights"><i aria-hidden="true" class="material-icons" style="display:inline-flex;padding:0 0 2px 0;vertical-align:middle">arrow_forward</i> Feature highlights</a></p>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
         &nbsp;
@@ -19,17 +19,18 @@
   <div class="mdc-layout-grid" style="background-image:linear-gradient(to right, rgba(0,0,0,.54), rgba(0,0,0,.95))">
     <div class="mdc-layout-grid__inner">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop">&nbsp;</div>
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7-desktop">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
         <h2>Sign up for the beta</h2>
         <p>Join the Early Adopter Program!</p>
         <p>We send out a limited number of beta invitations, based on several criteria.  Customer service cannot assist with beta access, but if you’re interested. you’ll want te sign up here.  If you’re selected to participate in a beta test, you’ll receive an e-mail with information on how to install the StoreCore client and provide feedback.</p>
         <p style="font-size:18px"><a class="amd-color--light-blue-a700" href="https://forms.gle/zyNkwELiG646iRsm9" style="text-decoration:none" title="StoreCore Early Adopter Program"><i aria-hidden="true" class="material-icons" style="display:inline-flex;padding:0 0 2px 0;vertical-align:middle">arrow_forward</i> Sign up today</a></p>
       </div>
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop">&nbsp;</div>
     </div>
   </div>
 </section>
 
-<section class="amd-background-color--ral-9016 amd-color--ral-9017" id="feature-highlights" style="padding-top:48px">
+<section class="amd-background-color--white" id="feature-highlights" style="padding-top:48px">
   <h2 style="text-align:center">Key feature highlights</h2>
   <div class="mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
@@ -46,7 +47,7 @@
         <p>StoreCore is built with security in mind.  Store&shy;Core is <abbr title="Payment Card Industry Data Security Standard">PCI DSS</abbr> compliant and includes security features like whitelists, blacklists, and military-grade password encryption.  To emphasize our dedication to security, all <a href="/plans-and-pricing" title="StoreCore plans and pricing">StoreCore hosting plans</a> include a free <abbr title="Secure Sockets Layer">SSL</abbr> certificate.</p>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
-        <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#4caf50">shopping_cart</i> Dedicated to commerce</h3>
+        <h3 class="mdc-typography--headline5"><i class="material-icons" role="presentation" style="color:#8bc34a">shopping_cart</i> Dedicated to commerce</h3>
         <p>StoreCore is not some overgrown blog tool or yet another <abbr title="content management system">CMS</abbr>.  It’s a dedicated e&#8209;com&shy;merce platform.  Built by, for, and with expe&shy;ri&shy;enced e‑commerce and retail pro&shy;fes&shy;sion&shy;als.</p>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">

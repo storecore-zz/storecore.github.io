@@ -1,5 +1,5 @@
 <?php require 'includes/header.inc.php'; ?>
-<div class="mdc-layout-grid amd-background-color--ral-9016 amd-color--ral-9017" style="padding-top:48px;padding-bottom:48px">
+<div class="mdc-layout-grid amd-background-color--white" style="padding-top:48px;padding-bottom:48px">
   <div class="mdc-layout-grid__inner">
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"><!-- (blank) --></div>
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
