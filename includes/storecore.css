@@ -171,6 +171,12 @@ strong {
   color: #0288d1; /* Light Blue 700 */
 }
 
+
+.mdc-card__media--performance-guidelines {
+  background-image: url("/images/performance-guidelines.jpg");
+  background-image: url("/images/performance-guidelines.webp");
+}
+
 .mdc-card__media--storecore-brand-identity-guide {
   background-image: url("/images/storecore-brand-identity-guide.jpg");
   background-image: url("/images/storecore-brand-identity-guide.webp");
@@ -180,6 +186,7 @@ strong {
   background-image: url("/images/storecore-installation-quickstart-guide.jpg");
   background-image: url("/images/storecore-installation-quickstart-guide.webp");
 }
+
 
 /* MDC data table */
 .amd-data-table {
@@ -790,6 +797,7 @@ code {
 pre {
   background-color: #eceff1; /* Material Blue Gray 50 */
   color: #37474f;
+  overflow-x: auto;
   padding: 1ex;
 }
 
