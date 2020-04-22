@@ -1,3 +1,5 @@
-User-Agent: *
+User-agent: *
 Allow: /
-Sitemap: http://storecore.io/sitemap.xml
+Crawl-delay: 2
+
+Sitemap: https://www.storecore.io/sitemap.xml
