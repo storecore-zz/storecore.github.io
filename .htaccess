@@ -15,9 +15,6 @@ Redirect 301 /thanks/ https://www.storecore.io/thanks
 Options +FollowSymLinks -MultiViews
 RewriteEngine On
 
-#RewriteCond %{HTTP_HOST} !www\.storecore\.io [NC]
-#RewriteRule ^(.*)$ https://www.storecore.io/$1 [L,R=301]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
