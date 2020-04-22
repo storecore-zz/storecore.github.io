@@ -200,9 +200,9 @@ flush();
           </ul>
           <hr>
           <ul>
-            <li><a href="/knowledge-base/user-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=User%20guides" title="User guides"> <i class="material-icons" aria-hidden="true">local_library</i> <span>User guides</span></a></li>
-            <li><a href="/knowledge-base/design-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=Design%20guides" title="Design guides"><i class="material-icons" aria-hidden="true">style</i> <span>Design guides</span></a></li>
-            <li><a href="/knowledge-base/developer-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=Developer%20guides" title="Developer guides"><i class="material-icons" aria-hidden="true">build</i> <span>Developer guides</span></a></li>
+            <li><a <?php if ($uri === '/knowledge-base/user-guides/') { echo 'class="mdc-list-item--activated"'; } ?> href="/knowledge-base/user-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=User%20guides" title="User guides"> <i class="material-icons" aria-hidden="true">local_library</i> <span>User guides</span></a></li>
+            <li><a <?php if ($uri === '/knowledge-base/design-guides/') { echo 'class="mdc-list-item--activated"'; } ?> href="/knowledge-base/design-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=Design%20guides" title="Design guides"><i class="material-icons" aria-hidden="true">style</i> <span>Design guides</span></a></li>
+            <li><a <?php if ($uri === '/knowledge-base/developer-guides/') { echo 'class="mdc-list-item--activated"'; } ?>  href="/knowledge-base/developer-guides/?utm_source=storecore.io&amp;utm_medium=navigation-drawer&amp;utm_content=Developer%20guides" title="Developer guides"><i class="material-icons" aria-hidden="true">build</i> <span>Developer guides</span></a></li>
           </ul>
           <hr>
           <ul>
