@@ -1,4 +1,4 @@
-<?php require '../../header.inc.php'; ?>
+<?php require '../../includes/header.inc.php'; ?>
 <article>
   <h1>Installation QuickStart Guide</h1>
   <p>This documentation is a work in progress.  It describes prerelease
@@ -80,4 +80,4 @@
       also includes free data migration of existing online shops.</p>
   </section>
 </article>
-<?php require '../../footer.inc.php';
+<?php require '../../includes/footer.inc.php';
