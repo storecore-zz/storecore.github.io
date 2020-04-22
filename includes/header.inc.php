@@ -206,8 +206,8 @@ flush();
           </ul>
           <hr>
           <ul>
-            <li><a href="https://github.com/storecore/core/issues" rel="noreferrer noopener" title="StoreCore issues on GitHub"><i class="material-icons" aria-hidden="true">bug_report</i> <span>Report a bug</span></a></li>
-            <li><a href="https://storecore.freshdesk.com/support/home" rel="noreferrer noopener" title="StoreCore Support"><i class="material-icons" aria-hidden="true">contact_support</i> <span>Contact support</span></a></li>
+            <li><a href="https://github.com/storecore/core/issues" rel="nofollow noreferrer" title="StoreCore issues on GitHub"><i class="material-icons" aria-hidden="true">bug_report</i> <span>Report a bug</span></a></li>
+            <li><a href="https://storecore.freshdesk.com/support/home" rel="nofollow noreferrer" title="StoreCore Support"><i class="material-icons" aria-hidden="true">contact_support</i> <span>Contact support</span></a></li>
           </ul>
           <hr>
           <ul>
