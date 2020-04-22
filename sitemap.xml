@@ -1,50 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.storecore.io/thanks/</loc>
-    <lastmod>2019-10-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
-  <url>
     <loc>https://www.storecore.io/</loc>
+    <lastmod>2020-04-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.storecore.io/pricing</loc>
+    <loc>https://www.storecore.io/contact</loc>
+    <lastmod>2020-04-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/</loc>
+    <lastmod>2020-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/design-guides/</loc>
+    <lastmod>2020-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/design-guides/storecore-brand-identity-guide</loc>
+    <lastmod>2020-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/developer-guides/</loc>
+    <lastmod>2020-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/developer-guides/performance-guidelines</loc>
+    <lastmod>2020-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/user-guides/</loc>
+    <lastmod>2020-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/knowledge-base/user-guides/installation-quickstart-guide</loc>
+    <lastmod>2020-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/licenses</loc>
+    <lastmod>2020-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://www.storecore.io/plans-and-pricing</loc>
+    <lastmod>2020-03-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.storecore.io/features</loc>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://www.storecore.io/contact</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.storecore.io/beta-sign-up</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.storecore.io/license</loc>
-    <priority>0.1</priority>
-  </url>
-  <url>
     <loc>https://www.storecore.io/privacy-policy</loc>
+    <lastmod>2020-02-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://www.storecore.io/knowledge-base</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.storecore.io/speed-important-for-ecommerce</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.storecore.io/amp-for-ecommerce</loc>
-    <priority>0.5</priority>
+    <loc>https://www.storecore.io/thanks</loc>
+    <lastmod>2019-10-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
   </url>
 </urlset>
