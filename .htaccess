@@ -10,7 +10,7 @@ Redirect 301 /index https://www.storecore.io/
 Redirect 301 /pricing https://www.storecore.io/plans-and-pricing
 Redirect 301 /privacy https://www.storecore.io/privacy-policy
 Redirect 301 /privacy/ https://www.storecore.io/privacy-policy
-Redirect 301 /thanks/ http://localhost/thanks
+Redirect 301 /thanks/ https://www.storecore.io/thanks
 
 Options +FollowSymLinks -MultiViews
 RewriteEngine On
