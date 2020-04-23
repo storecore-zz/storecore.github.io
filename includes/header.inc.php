@@ -81,10 +81,11 @@ switch ($uri) {
         $open_graph_image = 'https://www.storecore.io/images/380768-1200x675.jpg';
         $title            = 'Contact StoreCore';
         break;
-      case '/knowledge-base/':
-        $canonical   = 'https://www.storecore.io/knowledge-base/';
-        $description = 'The StoreCore knowledge base (KB) contains manuals, guides, and instructions for users, designers, and developers.';
-        $title       = 'Knowledge Base (KB)';
+    case '/knowledge-base/':
+        $canonical        = 'https://www.storecore.io/knowledge-base/';
+        $description      = 'The StoreCore knowledge base (KB) contains manuals, guides, and instructions for users, designers, and developers.';
+        $open_graph_image = 'https://www.storecore.io/images/knowledge-base-1200x675.jpg';
+        $title            = 'Knowledge Base (KB)';
         break;
     case '/knowledge-base/design-guides/storecore-brand-identity-guide':
         $canonical        = 'https://www.storecore.io/knowledge-base/design-guides/storecore-brand-identity-guide';
