@@ -86,6 +86,12 @@ switch ($uri) {
         $description = 'The StoreCore knowledge base (KB) contains manuals, guides, and instructions for users, designers, and developers.';
         $title       = 'Knowledge Base (KB)';
         break;
+    case '/knowledge-base/design-guides/storecore-brand-identity-guide':
+        $canonical        = 'https://www.storecore.io/knowledge-base/design-guides/storecore-brand-identity-guide';
+        $description      = 'This style guide provides guidelines to support your creative use and a consistent implementation of StoreCore’s corporate style and brand identity.';
+        $open_graph_image = 'https://www.storecore.io/images/storecore-brand-identity-guide-1200x675.jpg';
+        $title            = 'StoreCore brand identity guide';
+        break;
     case '/knowledge-base/user-guides/installation-quickstart-guide':
         $canonical   = 'https://www.storecore.io/knowledge-base/user-guides/installation-quickstart-guide';
         $title       = 'Installation QuickStart Guide (QSG)';
