@@ -27,6 +27,50 @@
     </ol>
   </nav>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": [
+      {
+        "@type": "Person",
+        "givenName": "Ward",
+        "familyName": "van der Put",
+        "name": "Ward van der Put"
+      },
+      {
+        "@type": "Person",
+        "givenName": "Patrick",
+        "familyName": "Heijmans",
+        "name": "Patrick Heijmans"
+      }
+    ],
+    "headline": "StoreCore brand identity guide",
+    "description": "This style guide provides guidelines to support your creative use and a consistent implementation of StoreCore’s corporate style and brand identity.",
+    "mainEntityOfPage": "https://www.storecore.io/knowledge-base/design-guides/storecore-brand-identity-guide",
+    "image": [
+      "https://www.storecore.io/images/storecore-brand-identity-guide-1200x1200.jpg",
+      "https://www.storecore.io/images/storecore-brand-identity-guide-1200x900.jpg",
+      "https://www.storecore.io/images/storecore-brand-identity-guide-1200x675.jpg"
+    ],
+    "datePublished": "<?php echo date(DATE_ATOM, filectime(__FILE__)) ?>",
+    "dateModified": "<?php echo date(DATE_ATOM, filemtime(__FILE__)) ?>",
+    "publisher": {
+      "@type": "Organization",
+      "name": "StoreCore",
+      "alternateName": "StoreCore.io",
+      "url": "https://www.storecore.io/",
+      "email": "info@storecore.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.storecore.io/images/StoreCore-logo-225x55.png",
+        "width": 225,
+        "height": 55
+      }
+    }
+  }
+  </script>
+
   <h1>StoreCore brand identity guide</h1>
   <p>This style guide provides guide&shy;lines to support your creative use and
     a consistent imple&shy;men&shy;ta&shy;tion of StoreCore’s corporate style
