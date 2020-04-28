@@ -1,10 +1,9 @@
 <?php require 'includes/header.inc.php'; ?>
 <article>
   <h1>Plans and pricing</h1>
-
   <section>
-    <h3>The best value package for your online shops</h3>
-    <div class="amd-data-table">
+    <h3>The best value package for&nbsp;your&nbsp;online&nbsp;shops</h3>
+    <div class="amd-data-table" style="display:block;overflow:auto;white-space:nowrap">
       <table aria-label="StoreCore plans and pricing">
         <thead>
           <tr>
@@ -125,13 +124,13 @@
       <summary class="mdc-typography--headline6" itemprop="name">Is data migration possible?</summary>
       <span itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <span itemprop="text">
-          StoreCore Premium includes free migration of product data, product
-          categories, and product brands for up to 1&nbsp;million products.
-          If your current data is sufficiently compatible with the StoreCore
-          database architecture, we will also migrate up to 1&nbsp;million
-          customer accounts and all customer groups.  Because StoreCore employs
-          very strong password encryption, your customers may have to reset
-          their password once.
+          StoreCore Premium includes free mi&shy;gra&shy;tion of product data,
+          product cate&shy;gories, and product brands for up to 1&nbsp;million
+          products.  If your current data is sufficiently compatible with the
+          StoreCore data&shy;base archi&shy;tec&shy;ture, we will also migrate
+          up to 1&nbsp;million customer accounts and all customer groups.
+          Because StoreCore employs very strong pass&shy;word encryp&shy;tion,
+          your customers may have to reset their password once.
         </span>
       </span>
     </details>
