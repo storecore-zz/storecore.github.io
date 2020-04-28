@@ -1,9 +1,8 @@
 <?php require 'includes/header.inc.php'; ?>
 <article>
   <h1>Plans and pricing</h1>
-
   <section>
-    <h3>The best value package for your online shops</h3>
+    <h3>The best value package for&nbsp;your&nbsp;online&nbsp;shops</h3>
     <div class="amd-data-table" style="display:block;overflow:auto;white-space:nowrap">
       <table aria-label="StoreCore plans and pricing">
         <thead>
