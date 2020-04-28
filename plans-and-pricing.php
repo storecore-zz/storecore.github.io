@@ -4,7 +4,7 @@
 
   <section>
     <h3>The best value package for your online shops</h3>
-    <div class="amd-data-table">
+    <div class="amd-data-table" style="display:block;overflow:auto;white-space:nowrap">
       <table aria-label="StoreCore plans and pricing">
         <thead>
           <tr>
