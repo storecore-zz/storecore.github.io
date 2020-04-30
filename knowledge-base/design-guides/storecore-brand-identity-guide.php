@@ -121,7 +121,7 @@
     </div>
 
     <p>Finally, these subtle, natural colours are offset by an
-      <dfn>error colour</dfn> for a state in which a system is off it’s feet.
+      <dfn>error colour</dfn> for a state in which a system is off its feet.
       In the StoreCore palette this is <strong>Red 700</strong> or hexadecimal
       <code>#d32f2f</code>, a counterpart of the Material colours Light Green
       700 and Light Blue 700.  This basic design system allows for functional
