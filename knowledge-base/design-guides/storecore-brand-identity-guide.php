@@ -53,7 +53,7 @@
       "https://www.storecore.io/images/storecore-brand-identity-guide-1200x900.jpg",
       "https://www.storecore.io/images/storecore-brand-identity-guide-1200x675.jpg"
     ],
-    "datePublished": "<?php echo date(DATE_ATOM, filectime(__FILE__)) ?>",
+    "datePublished": "2020-04-23T12:35:19+02:00",
     "dateModified": "<?php echo date(DATE_ATOM, filemtime(__FILE__)) ?>",
     "publisher": {
       "@type": "Organization",
