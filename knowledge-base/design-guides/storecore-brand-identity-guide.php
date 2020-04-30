@@ -72,6 +72,7 @@
   </script>
 
   <h1>StoreCore brand identity guide</h1>
+  <p>by <span lang="nl-NL"><a href="https://patrickheijmans.nl/" hreflang="nl-NL" rel="author">Patrick Heijmans</a></span> and <span lang="nl-NL"><a href="https://twitter.com/bloknood" rel="author nofollow noopener noreferrer">Ward van der Put</a></span></p>
   <p>This style guide provides guide&shy;lines to support your creative use and
     a consistent imple&shy;men&shy;ta&shy;tion of StoreCore’s corporate style
     and brand identity.  These guide&shy;lines for both internal and external
