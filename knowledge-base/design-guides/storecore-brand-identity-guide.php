@@ -53,7 +53,7 @@
       "https://www.storecore.io/images/storecore-brand-identity-guide-1200x900.jpg",
       "https://www.storecore.io/images/storecore-brand-identity-guide-1200x675.jpg"
     ],
-    "datePublished": "<?php echo date(DATE_ATOM, filectime(__FILE__)) ?>",
+    "datePublished": "2020-04-23T12:35:19+02:00",
     "dateModified": "<?php echo date(DATE_ATOM, filemtime(__FILE__)) ?>",
     "publisher": {
       "@type": "Organization",
@@ -72,6 +72,7 @@
   </script>
 
   <h1>StoreCore brand identity guide</h1>
+  <p>by <span lang="nl-NL"><a href="https://patrickheijmans.nl/" hreflang="nl-NL" rel="author">Patrick Heijmans</a></span> and <span lang="nl-NL"><a href="https://twitter.com/bloknood" rel="author nofollow noopener noreferrer">Ward van der Put</a></span></p>
   <p>This style guide provides guide&shy;lines to support your creative use and
     a consistent imple&shy;men&shy;ta&shy;tion of StoreCore’s corporate style
     and brand identity.  These guide&shy;lines for both internal and external
@@ -120,7 +121,7 @@
     </div>
 
     <p>Finally, these subtle, natural colours are offset by an
-      <dfn>error colour</dfn> for a state in which a system is off it’s feet.
+      <dfn>error colour</dfn> for a state in which a system is off its feet.
       In the StoreCore palette this is <strong>Red 700</strong> or hexadecimal
       <code>#d32f2f</code>, a counterpart of the Material colours Light Green
       700 and Light Blue 700.  This basic design system allows for functional
